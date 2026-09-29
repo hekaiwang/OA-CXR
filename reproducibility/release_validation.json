@@ -24,7 +24,9 @@
   "weights": {
     "anonymous_download": true,
     "sha256_verified": true,
-    "original_paper_weights_unchanged": true
+    "original_paper_weights_unchanged": true,
+    "remote_clone_cpu_smoke": "passed",
+    "completed_run_repackaging_tensor_equivalence": "passed"
   },
   "evaluation": {
     "test_source_images": 2792,
@@ -85,5 +87,11 @@
     "No repeated training seeds",
     "No clinical validation",
     "Full historical baseline/report/Robust/LOSO table suite is outside this main-method release"
-  ]
+  ],
+  "github_ci": {
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/hekaiwang/OA-CXR/actions/runs/36642409049",
+    "commit": "83bf29e5e99889bdb94cf04aabc4abb93312dfeb"
+  }
 }

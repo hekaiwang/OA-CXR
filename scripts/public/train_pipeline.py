@@ -45,14 +45,8 @@ def main():
         write_json(config,dict(schema='oa-cxr-neural-readout-training-v1',experiment='public-reproduction',
             sources={k:dict(path=str(v),sha256=sha256_file(v)) for k,v in paths.items()}))
         run('readout_train','train_neural_readout.py',['--config',config,'--config-sha256',sha256_file(config),'--output',out/'readout'])
-        import torch
-        from bundle import bundle
-        payload=torch.load(paths['selected_checkpoint'],map_location='cpu',weights_only=True)
-        torch.save(payload['model_state'],out/'selected_image_state.pt')
-        bundle(out/'selected_image_state.pt',out/'readout',out/'deploy',provenance=dict(
-            image_checkpoint_sha256=sha256_file(paths['selected_checkpoint']),
-            image_training_status_sha256=sha256_file(out/'image/status.json'),
-            readout_status_sha256=sha256_file(out/'readout/status.json'),seed=17))
+        from package_run import package_run
+        package_run(out,out/'deploy')
         state['status']='completed'
     except BaseException as exc:
         state.update(status='failed',error=type(exc).__name__+': '+str(exc));raise

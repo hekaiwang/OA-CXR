@@ -45,6 +45,18 @@ fit/dev feature matrices in RAM; allow at least 16 GB RAM, with 32 GB preferred.
 Retain at least 60–100 GB free disk for caches, exported features, intermediate
 checkpoints and source archives. Actual runtime depends on storage and hardware.
 
+## Package an already completed training run
+
+If training has completed and you need another deployment copy, packaging can
+be repeated into a fresh directory without repeating optimization:
+
+```bash
+python scripts/public/package_run.py --run runs/reproduction --output weights/retrained
+```
+
+This verifies completed image and readout outputs, their SHA256 values and their
+shared checkpoint identity. It does not resume interrupted training.
+
 ## Three different reproduction claims
 
 1. **Use the published model:** download the fixed revision, verify SHA values,
