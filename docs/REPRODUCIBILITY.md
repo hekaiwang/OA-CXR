@@ -84,6 +84,24 @@ for this release, with scope and remaining limitations. `reference_metrics.json`
 contains the frozen paper-model point estimates, with provenance hashes.
 Do not interpret a unit-test count as a fresh full-dataset training result.
 
+For the 2026-09-30 release, a clean environment passed 192 tests (four optional
+MAIRA processor checks skipped), and anonymous downloads passed CPU inference.
+Rebuilt arrays matched the historical cache exactly for 12 main and four
+external source samples. Full raw-data cache regeneration was not claimed.
+Evaluation of the published weights covered 8,805 source images and 343,395
+queries across all four sources; the largest per-source MAE difference from
+the reference was 0.000002995.
+
+Fresh fitting from the verified official initialization completed all 13 image
+epochs and all three 30-epoch readout candidates using the existing verified
+full fit/dev cache. `retraining_validation.json` preserves the epoch metrics,
+development selection and fresh deployment weight hashes. The process started
+before a packaging-helper rename and encountered that obsolete import after
+optimization; the final standalone packaging command then succeeded, including
+CPU inference. This is evidence for completed scientific training and verified
+packaging, not an uninterrupted full CLI replay. The published paper weights
+were not replaced by this validation run.
+
 ## Report review and benchmark scope
 
 The learned OA scoring method is fully represented by the released image model,

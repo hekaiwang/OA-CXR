@@ -19,14 +19,17 @@
       "targets"
     ],
     "bitwise_equal_to_historical_cache": true,
-    "full_new_cache_generation_claimed": false
+    "full_new_cache_generation_claimed": false,
+    "remote_clone_and_anonymous_annotation_download_checked": true
   },
   "weights": {
     "anonymous_download": true,
     "sha256_verified": true,
     "original_paper_weights_unchanged": true,
     "remote_clone_cpu_smoke": "passed",
-    "completed_run_repackaging_tensor_equivalence": "passed"
+    "completed_run_repackaging_tensor_equivalence": "passed",
+    "huggingface_revision": "4a93d5416838c63a954e00a04cd1be93778c6ffa",
+    "release_tag": "v1.0.0"
   },
   "evaluation": {
     "test_source_images": 2792,
@@ -67,8 +70,45 @@
           "replay": 0.9198826770709386,
           "absolute_difference": 3.5833616240932287e-07
         }
+      },
+      "nih_chexmask": {
+        "mae": {
+          "reference": 0.02534319004841258,
+          "replay": 0.025342875900348352,
+          "absolute_difference": 3.1414806422880304e-07
+        },
+        "rmse": {
+          "reference": 0.056671577159425404,
+          "replay": 0.05666499985325274,
+          "absolute_difference": 6.577306172664277e-06
+        },
+        "spearman": {
+          "reference": 0.9216164377894897,
+          "replay": 0.9216077192065395,
+          "absolute_difference": 8.718582950151266e-06
+        }
+      },
+      "shenzhen": {
+        "mae": {
+          "reference": 0.02939705742109153,
+          "replay": 0.029394063181204036,
+          "absolute_difference": 2.994239887494504e-06
+        },
+        "rmse": {
+          "reference": 0.06271212858108009,
+          "replay": 0.06267678555378943,
+          "absolute_difference": 3.5343027290662965e-05
+        },
+        "spearman": {
+          "reference": 0.8811514664477398,
+          "replay": 0.8814116445426308,
+          "absolute_difference": 0.00026017809489098376
+        }
       }
-    }
+    },
+    "all_four_sources_completed": true,
+    "total_source_images": 8805,
+    "total_queries": 343395
   },
   "fresh_training": {
     "image_stage": {
@@ -78,9 +118,73 @@
       "best_epoch": 12,
       "best_dev_mae": 0.05125090460746716
     },
-    "readout_stage": "running_pipeline",
+    "readout_stage": {
+      "status": "completed",
+      "candidates": {
+        "direct_linear_l1": {
+          "status": "completed",
+          "completed_epochs": 30,
+          "optimizer_steps": 10920,
+          "best_epoch": 27,
+          "best_dev_mae": 0.028620941805525907,
+          "status_sha256": "c73aa6563b54a1728330fc27da220c35cf80b0f2ba73aa9815e95ce63edaec9e"
+        },
+        "direct_linear_huber002": {
+          "status": "completed",
+          "completed_epochs": 30,
+          "optimizer_steps": 10920,
+          "best_epoch": 26,
+          "best_dev_mae": 0.02920560463888509,
+          "status_sha256": "d1d0a5763634f5942a3264a7a08b27edf9d9ba8076156cd78b22be04a62bb886"
+        },
+        "old_logit_residual_l1": {
+          "status": "completed",
+          "completed_epochs": 30,
+          "optimizer_steps": 10920,
+          "best_epoch": 20,
+          "best_dev_mae": 0.029003777951784823,
+          "status_sha256": "0a904ce124af5490eb18cc28dc6fb37ed39b74583989fb562cce1e4895026547"
+        }
+      },
+      "selection": {
+        "candidate": "direct_linear_l1",
+        "candidate_order": 0,
+        "best_epoch": 27,
+        "dev_mae": 0.028620941805525907,
+        "original_fp32_control_dev_mae": 0.050192024809931436,
+        "improved_vs_original_fp32_control": true,
+        "recommendation": "direct_linear_l1",
+        "selection_used_heldout": false,
+        "selection_used_original512_secondary": false,
+        "candidate_status_sha256": {
+          "direct_linear_l1": "c73aa6563b54a1728330fc27da220c35cf80b0f2ba73aa9815e95ce63edaec9e",
+          "direct_linear_huber002": "d1d0a5763634f5942a3264a7a08b27edf9d9ba8076156cd78b22be04a62bb886",
+          "old_logit_residual_l1": "0a904ce124af5490eb18cc28dc6fb37ed39b74583989fb562cce1e4895026547"
+        }
+      }
+    },
     "data": "original verified full fit/dev cache; public raw-data preparation separately checked for exact sample equality",
-    "whole_pipeline_completed": false
+    "whole_pipeline_completed": true,
+    "uninterrupted_cli_run": false,
+    "heldout_data_access": false,
+    "packaging": "completed using the final standalone package_run.py entrypoint",
+    "deployment_cpu_functionality": "passed",
+    "deploy_config_sha256": "ea3983d8358520ccbb5e9503d8ed505384ced088d072c2a857ced87cd6732f80",
+    "fresh_weights_replace_paper_weights": false,
+    "development_wrapper_recovery": {
+      "original_status": "failed",
+      "original_error": "ModuleNotFoundError: No module named 'model'",
+      "completed_stages": [
+        "image_smoke",
+        "image_train",
+        "export_fit",
+        "labels_fit",
+        "export_dev",
+        "labels_dev",
+        "readout_train"
+      ],
+      "explanation": "The process began before the packaging helper was renamed. All scientific stages completed. Final release package_run.py then packaged the completed run successfully without rerunning optimization. The final train_pipeline.py calls this verified helper."
+    }
   },
   "limitations": [
     "No claim of bitwise-identical retraining",
@@ -91,7 +195,8 @@
   "github_ci": {
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/hekaiwang/OA-CXR/actions/runs/36642409049",
-    "commit": "83bf29e5e99889bdb94cf04aabc4abb93312dfeb"
+    "url": "https://github.com/hekaiwang/OA-CXR/actions/runs/36642880231",
+    "commit": "d28bd39733f1a40b529eac7f045c2536088d33ea",
+    "scope": "Final executable code before adding completed validation evidence"
   }
 }
