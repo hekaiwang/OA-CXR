@@ -1,5 +1,10 @@
 # OA-CXR
 
+> [!IMPORTANT]
+> **Pretrained weights: [Hugging Face · wanghekai/OA-CXR](https://huggingface.co/wanghekai/OA-CXR).**
+>
+> The release includes the image model, selected neural readout and fitted normalization parameters. See [download and inference instructions](#download-and-predict).
+
 Trainable implementation and public weights for **relative anatomical-retention
 estimation in chest radiograph report review**. Given a presented image, OA-CXR
 returns basal, peripheral and whole-lung retention scores associated with
@@ -9,11 +14,43 @@ The default released model is the development-selected paper model (seed 17,
 image epoch 12, direct linear L1 readout epoch 27). It is not the optional Robust
 candidate, and MAIRA-2 is not part of these weights.
 
-- [Public model and reproducibility artifacts](https://huggingface.co/wanghekai/OA-CXR)
-- [Data acquisition and exact frozen splits](docs/DATA.md)
+## Datasets
+
+Download radiographs from the linked providers. The counts below describe the
+fixed subsets used in this study, not the full original datasets.
+
+| Dataset / image download | Use | Source images | Lung annotations |
+|---|---|---:|---|
+| [COVID-QU-Ex v7](https://www.kaggle.com/dsv/3122958) | Train / dev / calibration / test | 22,591 | Masks included in the source dataset |
+| [Kermany v2](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) | Train / dev / calibration / test | 4,547 | V7-derived masks supplied with the release |
+| [NIH ChestX-ray](https://nihcc.app.box.com/v/ChestXray-NIHCC) | External evaluation | 5,821 | [CheXmask 1.0.0](https://physionet.org/content/chexmask-cxr-segmentation-data/1.0.0/) pseudo masks |
+| [Shenzhen](https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Shenzhen-Hospital-CXR-Set/CXR_png/index.html) | External evaluation | 192 | [SHCXR lung masks](https://www.kaggle.com/datasets/yoctoman/shcxr-lung-mask) |
+
+Raw radiographs must be obtained separately under the providers' terms. Download
+the V7-derived masks with `python scripts/public/download.py --output weights_training --with-training-masks`
+after installation. See [data preparation and fixed splits](docs/DATA.md) for
+the exact versions, checksums and commands.
+
+## Results
+
+Reference results for the released model, rounded to **four decimal places**.
+Each source image contributes 13 controlled presentations and three regional
+queries per presentation. Lower MAE/RMSE and higher Spearman correlation are better.
+
+| Dataset | Evaluation split | Source images | MAE ↓ | RMSE ↓ | Spearman ρ ↑ |
+|---|---|---:|---:|---:|---:|
+| COVID-QU-Ex | Test | 1,855 | 0.0270 | 0.0619 | 0.8980 |
+| Kermany/V7 | Test (exploratory) | 937 | 0.0368 | 0.0693 | 0.9199 |
+| NIH/CheXmask | External | 5,821 | 0.0253 | 0.0567 | 0.9216 |
+| Shenzhen | External | 192 | 0.0294 | 0.0627 | 0.8812 |
+
+These measure relative anatomical retention. Full-precision values and query
+counts are available in [reference metrics](reproducibility/reference_metrics.json);
+the [release validation](reproducibility/release_validation.json) records an
+independent replay of the published weights.
+
 - [Training, evaluation and reproduction boundaries](docs/REPRODUCIBILITY.md)
 - [Licenses and third-party attribution](THIRD_PARTY_NOTICES.md)
-- [中文说明](README.zh-CN.md)
 
 ## Install
 
