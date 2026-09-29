@@ -1,0 +1,14 @@
+{
+  "schema": "oa-cxr-frozen-cohorts-v1",
+  "seed": 17,
+  "files": {
+    "main_sources.jsonl.gz": {
+      "bytes": 4441853,
+      "sha256": "f2669391f8f5e37cbb2d5734489cf44a8a65830e6ce85f00151b097888e00e4d"
+    },
+    "external_sources.jsonl.gz": {
+      "bytes": 1024123,
+      "sha256": "3420a819c440a514bfb01d09ee64daf15f2413ae74f3d1e988158ba773023175"
+    }
+  }
+}

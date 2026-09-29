@@ -1,0 +1,42 @@
+{
+  "repo_id": "wanghekai/OA-CXR",
+  "revision": "4a93d5416838c63a954e00a04cd1be93778c6ffa",
+  "files": {
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 3600,
+      "sha256": "c9f9e5cff718e7d610b5e887004981ba3f414874caafa51d6c624e3cc97ef71e"
+    },
+    "LICENSE-CODE": {
+      "bytes": 1066,
+      "sha256": "fe3e8e5967165c8bc1fc6f07ff07971b723f1ed8c132c1e178806cca31646bff"
+    },
+    "LICENSE": {
+      "bytes": 1191,
+      "sha256": "6e587417dcd5c87f4c2c0def9f125895d72c7ddfcc0740853df12338ce8bfb8f"
+    },
+    "README.md": {
+      "bytes": 3092,
+      "sha256": "030497dbb85406a1302850bf9e709d705882d4a8cb83ba479af53b37d5c64046"
+    },
+    "main/config.json": {
+      "bytes": 2512,
+      "sha256": "e09ff4c6abf587ab8c2bbe4724b38bc95a487463dd2b541f65e8c5f8240a1e08"
+    },
+    "main/training_history.json": {
+      "bytes": 84703,
+      "sha256": "b9ea341a6043ed4e857b2232ade5a127e4de5b68fbfa43bd71d4148b8219717c"
+    },
+    "main/readout_state.pt": {
+      "bytes": 2358434,
+      "sha256": "03b6e4c094d68e764a0340f1c4ff13c7b75bfd5ed84372767396c77f89fe195b"
+    },
+    "main/image_state.pt": {
+      "bytes": 29573522,
+      "sha256": "0e65a604fb32428c74b61add88bd92f445b08966fe64d1c38d751a714b53f895"
+    },
+    "reproduction/kermany-v7-masks.tar.gz": {
+      "bytes": 37182535,
+      "sha256": "579c8c0902b8c94e5688dffcad3811cc767f7529fdbcb98e9cb45b0a80814d0a"
+    }
+  }
+}

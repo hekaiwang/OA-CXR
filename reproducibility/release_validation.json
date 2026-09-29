@@ -1,0 +1,89 @@
+{
+  "schema": "oa-cxr-release-validation-v1",
+  "date": "2026-09-30",
+  "clean_environment": {
+    "python": "3.10",
+    "installed_from_public_package": true,
+    "pip_check": "passed",
+    "tests_passed": 192,
+    "tests_skipped": 4,
+    "subtests_passed": 45,
+    "skip_reason": "optional MAIRA processor cross-check; generator not required by this release"
+  },
+  "data_reconstruction": {
+    "main_source_samples": 12,
+    "external_source_samples": 4,
+    "arrays_compared": [
+      "images",
+      "masks",
+      "targets"
+    ],
+    "bitwise_equal_to_historical_cache": true,
+    "full_new_cache_generation_claimed": false
+  },
+  "weights": {
+    "anonymous_download": true,
+    "sha256_verified": true,
+    "original_paper_weights_unchanged": true
+  },
+  "evaluation": {
+    "test_source_images": 2792,
+    "test_queries": 108888,
+    "gpu": "NVIDIA A40",
+    "precision": "BF16 image, FP32 readout",
+    "point_comparison": {
+      "covidqu_v7": {
+        "mae": {
+          "reference": 0.02695365850040602,
+          "replay": 0.026953437482188283,
+          "absolute_difference": 2.210182177379838e-07
+        },
+        "rmse": {
+          "reference": 0.06190426385741302,
+          "replay": 0.061906754164651676,
+          "absolute_difference": 2.490307238658951e-06
+        },
+        "spearman": {
+          "reference": 0.897972361519055,
+          "replay": 0.8979725340184392,
+          "absolute_difference": 1.7249938422114752e-07
+        }
+      },
+      "kermany_v7": {
+        "mae": {
+          "reference": 0.03682892874762095,
+          "replay": 0.03683166634579908,
+          "absolute_difference": 2.7375981781346814e-06
+        },
+        "rmse": {
+          "reference": 0.06932207900956387,
+          "replay": 0.06932037419639854,
+          "absolute_difference": 1.7048131653318865e-06
+        },
+        "spearman": {
+          "reference": 0.919883035407101,
+          "replay": 0.9198826770709386,
+          "absolute_difference": 3.5833616240932287e-07
+        }
+      }
+    }
+  },
+  "fresh_training": {
+    "image_stage": {
+      "status": "completed",
+      "completed_epochs": 13,
+      "optimizer_steps": 975,
+      "best_epoch": 12,
+      "best_dev_mae": 0.05125090460746716
+    },
+    "readout_stage": "running_pipeline",
+    "data": "original verified full fit/dev cache; public raw-data preparation separately checked for exact sample equality",
+    "whole_pipeline_completed": false
+  },
+  "limitations": [
+    "No claim of bitwise-identical retraining",
+    "No repeated training seeds",
+    "No clinical validation",
+    "Full historical baseline/report/Robust/LOSO table suite is outside this main-method release"
+  ]
+}

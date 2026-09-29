@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this software and the corresponding OA-CXR manuscript."
+title: "OA-CXR: Relative anatomical-retention estimation for chest radiograph report review"
+authors:
+  - name: "hekaiwang"
+version: 1.0.0
+date-released: 2026-09-30
+url: "https://github.com/hekaiwang/OA-CXR"
+license: MIT

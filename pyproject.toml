@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oa-cxr"
+version = "1.0.0"
+description = "Relative anatomical-retention estimation for chest radiograph report review"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["numpy==2.2.6", "Pillow==12.3.0", "scipy==1.15.3", "scikit-learn==1.7.2", "joblib==1.6.0", "threadpoolctl==3.7.0"]
+
+[project.optional-dependencies]
+training = ["torch==2.6.0", "torchvision==0.21.0", "torchxrayvision==1.5.4"]
+download = ["huggingface-hub>=0.30,<1"]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

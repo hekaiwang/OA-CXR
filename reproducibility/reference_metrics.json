@@ -1,0 +1,328 @@
+{
+  "schema": "oa-cxr-paper-point-estimates-v1",
+  "model": "default-neural-readout-20260923",
+  "seed": 17,
+  "datasets": {
+    "covidqu_v7/test": {
+      "source_images": 1855,
+      "inputs": 24115,
+      "queries": 72345,
+      "metrics": {
+        "mae": 0.02695365850040602,
+        "rmse": 0.06190426385741302,
+        "spearman": 0.897972361519055,
+        "bad_proxy_auroc": 0.9822624025885147,
+        "bad_proxy_auprc": 0.9652642767609533,
+        "aurc": 0.06989836914835314,
+        "excess_aurc": 0.0070016364305273415,
+        "rows": 72345,
+        "bad_proxy_rows": 24092,
+        "good_proxy_rows": 48253,
+        "matched_risk_coverage": [
+          {
+            "target_coverage": 0.5,
+            "actual_coverage": 0.5000069113276661,
+            "retained_rows": 36173,
+            "expected_bad_retained": 201.0,
+            "expected_good_lost": 12281.0,
+            "conditional_bad_risk": 0.005556630636109805,
+            "bad_per_original_query": 0.0027783537217499483,
+            "good_loss_fraction": 0.2545126727871842
+          },
+          {
+            "target_coverage": 0.6,
+            "actual_coverage": 0.6,
+            "retained_rows": 43407,
+            "expected_bad_retained": 765.0,
+            "expected_good_lost": 5611.0,
+            "conditional_bad_risk": 0.01762388554841385,
+            "bad_per_original_query": 0.01057433132904831,
+            "good_loss_fraction": 0.1162829254139639
+          },
+          {
+            "target_coverage": 0.7,
+            "actual_coverage": 0.700006911327666,
+            "retained_rows": 50642,
+            "expected_bad_retained": 3519.0,
+            "expected_good_lost": 1130.0,
+            "conditional_bad_risk": 0.06948777694403854,
+            "bad_per_original_query": 0.048641924113622226,
+            "good_loss_fraction": 0.02341823306322923
+          },
+          {
+            "target_coverage": 0.8,
+            "actual_coverage": 0.8,
+            "retained_rows": 57876,
+            "expected_bad_retained": 9875.0,
+            "expected_good_lost": 252.0,
+            "conditional_bad_risk": 0.17062340175547722,
+            "bad_per_original_query": 0.1364987214043818,
+            "good_loss_fraction": 0.005222473214100677
+          },
+          {
+            "target_coverage": 0.9,
+            "actual_coverage": 0.9000069113276661,
+            "retained_rows": 65111,
+            "expected_bad_retained": 16931.0,
+            "expected_good_lost": 73.0,
+            "conditional_bad_risk": 0.2600328669502849,
+            "bad_per_original_query": 0.23403137742760385,
+            "good_loss_fraction": 0.0015128593040847202
+          },
+          {
+            "target_coverage": 1.0,
+            "actual_coverage": 1.0,
+            "retained_rows": 72345,
+            "expected_bad_retained": 24092.0,
+            "expected_good_lost": 0.0,
+            "conditional_bad_risk": 0.33301541226069525,
+            "bad_per_original_query": 0.33301541226069525,
+            "good_loss_fraction": 0.0
+          }
+        ]
+      }
+    },
+    "kermany_v7/test": {
+      "source_images": 937,
+      "inputs": 12181,
+      "queries": 36543,
+      "metrics": {
+        "mae": 0.03682892874762095,
+        "rmse": 0.06932207900956387,
+        "spearman": 0.919883035407101,
+        "bad_proxy_auroc": 0.9705371897074289,
+        "bad_proxy_auprc": 0.9605459503561057,
+        "aurc": 0.12415723125966242,
+        "excess_aurc": 0.013888582413882106,
+        "rows": 36543,
+        "bad_proxy_rows": 15757,
+        "good_proxy_rows": 20786,
+        "matched_risk_coverage": [
+          {
+            "target_coverage": 0.5,
+            "actual_coverage": 0.5000136825110144,
+            "retained_rows": 18272,
+            "expected_bad_retained": 724.0,
+            "expected_good_lost": 3238.0,
+            "conditional_bad_risk": 0.03962346760070053,
+            "bad_per_original_query": 0.01981227594888214,
+            "good_loss_fraction": 0.15577792745116906
+          },
+          {
+            "target_coverage": 0.6,
+            "actual_coverage": 0.6000054730044058,
+            "retained_rows": 21926,
+            "expected_bad_retained": 2218.0,
+            "expected_good_lost": 1078.0,
+            "conditional_bad_risk": 0.10115844203229044,
+            "bad_per_original_query": 0.06069561885997318,
+            "good_loss_fraction": 0.05186183007793707
+          },
+          {
+            "target_coverage": 0.7,
+            "actual_coverage": 0.7000246285198259,
+            "retained_rows": 25581,
+            "expected_bad_retained": 5114.0,
+            "expected_good_lost": 319.0,
+            "conditional_bad_risk": 0.19991399867088855,
+            "bad_per_original_query": 0.13994472265550173,
+            "good_loss_fraction": 0.015346868084287502
+          },
+          {
+            "target_coverage": 0.8,
+            "actual_coverage": 0.8000164190132173,
+            "retained_rows": 29235,
+            "expected_bad_retained": 8536.0,
+            "expected_good_lost": 87.0,
+            "conditional_bad_risk": 0.29197879254318454,
+            "bad_per_original_query": 0.23358782803820158,
+            "good_loss_fraction": 0.004185509477532955
+          },
+          {
+            "target_coverage": 0.9,
+            "actual_coverage": 0.9000082095066086,
+            "retained_rows": 32889,
+            "expected_bad_retained": 12135.0,
+            "expected_good_lost": 32.0,
+            "conditional_bad_risk": 0.36896834807990514,
+            "bad_per_original_query": 0.33207454232000655,
+            "good_loss_fraction": 0.001539497738862696
+          },
+          {
+            "target_coverage": 1.0,
+            "actual_coverage": 1.0,
+            "retained_rows": 36543,
+            "expected_bad_retained": 15757.0,
+            "expected_good_lost": 0.0,
+            "conditional_bad_risk": 0.43119065210847496,
+            "bad_per_original_query": 0.43119065210847496,
+            "good_loss_fraction": 0.0
+          }
+        ]
+      }
+    },
+    "nih_chexmask/external": {
+      "source_images": 5821,
+      "inputs": 75673,
+      "queries": 227019,
+      "metrics": {
+        "mae": 0.02534319004841258,
+        "rmse": 0.056671577159425404,
+        "spearman": 0.9216164377894897,
+        "bad_proxy_auroc": 0.9836006227718344,
+        "bad_proxy_auprc": 0.9745014821053178,
+        "aurc": 0.0883092142825816,
+        "excess_aurc": 0.007925662513569728,
+        "rows": 227019,
+        "bad_proxy_rows": 84713,
+        "good_proxy_rows": 142306,
+        "matched_risk_coverage": [
+          {
+            "target_coverage": 0.5,
+            "actual_coverage": 0.500002202458825,
+            "retained_rows": 113510,
+            "expected_bad_retained": 1175.0,
+            "expected_good_lost": 29971.0,
+            "conditional_bad_risk": 0.01035151088009867,
+            "bad_per_original_query": 0.005175778238825825,
+            "good_loss_fraction": 0.2106095315728079
+          },
+          {
+            "target_coverage": 0.6,
+            "actual_coverage": 0.60000264295059,
+            "retained_rows": 136212,
+            "expected_bad_retained": 3927.0,
+            "expected_good_lost": 10021.0,
+            "conditional_bad_risk": 0.02883005902563651,
+            "bad_per_original_query": 0.01729811161180342,
+            "good_loss_fraction": 0.07041867524911107
+          },
+          {
+            "target_coverage": 0.7,
+            "actual_coverage": 0.7000030834423551,
+            "retained_rows": 158914,
+            "expected_bad_retained": 18065.0,
+            "expected_good_lost": 1457.0,
+            "conditional_bad_risk": 0.11367783832764891,
+            "bad_per_original_query": 0.07957483734841578,
+            "good_loss_fraction": 0.010238500133515101
+          },
+          {
+            "target_coverage": 0.8,
+            "actual_coverage": 0.80000352393412,
+            "retained_rows": 181616,
+            "expected_bad_retained": 39707.0,
+            "expected_good_lost": 397.0,
+            "conditional_bad_risk": 0.2186316183596159,
+            "bad_per_original_query": 0.17490606513111237,
+            "good_loss_fraction": 0.0027897629052886035
+          },
+          {
+            "target_coverage": 0.9,
+            "actual_coverage": 0.900003964425885,
+            "retained_rows": 204318,
+            "expected_bad_retained": 62134.0,
+            "expected_good_lost": 122.0,
+            "conditional_bad_risk": 0.3041043862997876,
+            "bad_per_original_query": 0.27369515326910965,
+            "good_loss_fraction": 0.0008573074923053139
+          },
+          {
+            "target_coverage": 1.0,
+            "actual_coverage": 1.0,
+            "retained_rows": 227019,
+            "expected_bad_retained": 84713.0,
+            "expected_good_lost": 0.0,
+            "conditional_bad_risk": 0.3731537888899167,
+            "bad_per_original_query": 0.3731537888899167,
+            "good_loss_fraction": 0.0
+          }
+        ]
+      }
+    },
+    "shenzhen/external": {
+      "source_images": 192,
+      "inputs": 2496,
+      "queries": 7488,
+      "metrics": {
+        "mae": 0.02939705742109153,
+        "rmse": 0.06271212858108009,
+        "spearman": 0.8811514664477398,
+        "bad_proxy_auroc": 0.9764099871508052,
+        "bad_proxy_auprc": 0.9410224835128067,
+        "aurc": 0.05608810491688345,
+        "excess_aurc": 0.007644523855530605,
+        "rows": 7488,
+        "bad_proxy_rows": 2206,
+        "good_proxy_rows": 5282,
+        "matched_risk_coverage": [
+          {
+            "target_coverage": 0.5,
+            "actual_coverage": 0.5,
+            "retained_rows": 3744,
+            "expected_bad_retained": 12.0,
+            "expected_good_lost": 1550.0,
+            "conditional_bad_risk": 0.003205128205128205,
+            "bad_per_original_query": 0.0016025641025641025,
+            "good_loss_fraction": 0.29344945096554337
+          },
+          {
+            "target_coverage": 0.6,
+            "actual_coverage": 0.6000267094017094,
+            "retained_rows": 4493,
+            "expected_bad_retained": 53.0,
+            "expected_good_lost": 842.0,
+            "conditional_bad_risk": 0.011796127309147563,
+            "bad_per_original_query": 0.007077991452991453,
+            "good_loss_fraction": 0.15940931465354033
+          },
+          {
+            "target_coverage": 0.7,
+            "actual_coverage": 0.7000534188034188,
+            "retained_rows": 5242,
+            "expected_bad_retained": 252.0,
+            "expected_good_lost": 292.0,
+            "conditional_bad_risk": 0.04807325448302175,
+            "bad_per_original_query": 0.03365384615384615,
+            "good_loss_fraction": 0.05528209011737978
+          },
+          {
+            "target_coverage": 0.8,
+            "actual_coverage": 0.8000801282051282,
+            "retained_rows": 5991,
+            "expected_bad_retained": 774.0,
+            "expected_good_lost": 65.0,
+            "conditional_bad_risk": 0.12919379068602904,
+            "bad_per_original_query": 0.10336538461538461,
+            "good_loss_fraction": 0.012305944717909882
+          },
+          {
+            "target_coverage": 0.9,
+            "actual_coverage": 0.9001068376068376,
+            "retained_rows": 6740,
+            "expected_bad_retained": 1477.0,
+            "expected_good_lost": 19.0,
+            "conditional_bad_risk": 0.21913946587537092,
+            "bad_per_original_query": 0.19724893162393162,
+            "good_loss_fraction": 0.0035971223021582736
+          },
+          {
+            "target_coverage": 1.0,
+            "actual_coverage": 1.0,
+            "retained_rows": 7488,
+            "expected_bad_retained": 2206.0,
+            "expected_good_lost": 0.0,
+            "conditional_bad_risk": 0.29460470085470086,
+            "bad_per_original_query": 0.29460470085470086,
+            "good_loss_fraction": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "test": "c1ad173c3257d82a7cb1fab05879ed9b241099b5c6811b1fc27c5e2dd4d14411",
+    "external_nih": "17e09119a1c186e7d3b48b965d1fda0d3e6129dc93728909f0054b0318ba1026",
+    "external_shenzhen": "f412269538b74b0f031cf1680d3212b2a11747d03fa122730a88f07288ca7300"
+  }
+}

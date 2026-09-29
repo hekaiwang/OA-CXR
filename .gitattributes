@@ -1,0 +1,9 @@
+# Model manifests bind exact Python source bytes, including historical line endings.
+*.py -text
+*.gz -text
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.cff text eol=lf
