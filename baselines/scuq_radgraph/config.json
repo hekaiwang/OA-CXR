@@ -1,0 +1,29 @@
+{
+  "schema": "oa-cxr-baseline-config-v1",
+  "method": "scuq_radgraph",
+  "display_name": "SCUQ RadGraph (10 samples)",
+  "role": "external_score_adaptation",
+  "full_original_paper_reproduction": false,
+  "upstream": "https://github.com/BU-DEPEND-Lab/SCUQ-RRG",
+  "score_direction": "higher_is_more_retained_or_more_confident",
+  "clinical_support_probability": false,
+  "new_experiment_status": "pending",
+  "hyperparameter_search": false,
+  "training": "frozen_official_assets_or_same_new_maira_reports",
+  "adapter_implementation_status": "implemented_contract_tested_pending_gpu_smoke",
+  "asset_revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+  "asset_sha256": null,
+  "execution_entrypoint": "python -m baselines.scuq_radgraph.run",
+  "score_contract": "baselines/SCORE_CONTRACT.md",
+  "full_new_cohort_run_completed": false,
+  "samples_per_input": 10,
+  "sampling_protocol_status": "must_be_frozen_before_generation",
+  "assets_manifest": {
+    "path": "assets_manifest.json",
+    "sha256": "cd84f2edcab16d86bad38de44f450d875b82cb16f69d69eee2fdcdc872dbb259"
+  },
+  "source_manifest": {
+    "path": "upstream_asset_inventory.json",
+    "sha256": "c19d940b6da7ea33ef769bcfdf8ab7199b1e05e1d713db365453dfa71ccf50e8"
+  }
+}

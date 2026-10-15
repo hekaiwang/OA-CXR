@@ -1,0 +1,46 @@
+{
+  "schema": "oa-cxr-baseline-assets-v1",
+  "method": "chexpert",
+  "asset_root": "baselines/chexpert/checkpoints/pretrained",
+  "revision": "torchxrayvision-1.5.4-chexpert-only",
+  "upstream": "https://github.com/mlmed/torchxrayvision/releases/download/v1/chex-densenet121-d121-tw-lr001-rot45-tr15-sc15-seed0-best.pt",
+  "torchxrayvision_version": "1.5.4",
+  "files": {
+    "chex-densenet121-d121-tw-lr001-rot45-tr15-sc15-seed0-best.pt": {
+      "bytes": 28381998,
+      "sha256": "1a914ae802170187a4852e594708206c12468eeeefd66aa4e8e26141649d61a4"
+    },
+    "chexpert_tensor_state.pt": {
+      "bytes": 28444879,
+      "sha256": "1796a17c287534690a95c863104ebc6e53c245d3d3f831788fe9ff88aca6bb40"
+    },
+    "chexpert_tensor_state.pt.json": {
+      "bytes": 562,
+      "sha256": "f646f246c2e4047d103ae1759f967f94d6fd4bae9904aaa638a2d7200e39cb5b"
+    }
+  },
+  "conversion": {
+    "source_url": "https://github.com/mlmed/torchxrayvision/releases/download/v1/chex-densenet121-d121-tw-lr001-rot45-tr15-sc15-seed0-best.pt",
+    "source_sha256": "1a914ae802170187a4852e594708206c12468eeeefd66aa4e8e26141649d61a4",
+    "sha256": "1796a17c287534690a95c863104ebc6e53c245d3d3f831788fe9ff88aca6bb40",
+    "bytes": 28444879,
+    "converted_at": "2026-09-21T00:47:56.206988+08:00",
+    "torch": "2.6.0+cu124",
+    "torchxrayvision": "1.5.4",
+    "policy": "explicit one-time hash-pinned legacy conversion; inference tensor-only",
+    "upstream_signed_hash": false
+  },
+  "metadata_only": true,
+  "legacy_results_included": false,
+  "license_provenance": {
+    "implementation": {
+      "declared": "Apache-2.0 for xrv.models/main library",
+      "source": "https://github.com/mlmed/torchxrayvision/blob/main/LICENSE",
+      "scope": "Upstream explicitly separates baseline_models licenses; this adapter loads xrv.models.DenseNet only."
+    },
+    "checkpoint": {
+      "declared": "No separate checkpoint license text was retained with the official release asset. Do not automatically extend the package license to every supplied weight or training dataset.",
+      "source": "https://github.com/mlmed/torchxrayvision/releases/tag/v1"
+    }
+  }
+}

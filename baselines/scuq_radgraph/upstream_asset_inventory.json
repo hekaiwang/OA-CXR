@@ -1,0 +1,67 @@
+{
+  "schema": "oa-cxr-upstream-source-inventory-v1",
+  "method": "scuq_radgraph",
+  "asset_root": "baselines/scuq_radgraph/checkpoints/pretrained/upstream",
+  "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+  "files": {
+    "pyproject.toml": {
+      "bytes": 1769,
+      "sha256": "bb9ec14da8899bcced40d2a1c996a9b52d8bd60d1569f59cb89f7c14cf1b3ef6"
+    },
+    "LICENSE": {
+      "bytes": 1068,
+      "sha256": "ba2de420ed407438b9379be5de73f6747017263073be801c28ef531d0a9da7f6"
+    },
+    "requirements.txt": {
+      "bytes": 285,
+      "sha256": "58ea984c877aabb3fad68cd2a76944b8c3959181f5735aeb7175aa1966a679e7"
+    },
+    "scuq/utils.py": {
+      "bytes": 1372,
+      "sha256": "2ae1ef644ae0073c57251726c729ea875ff976a30c6ef9714917a4dc5986e135"
+    },
+    "scuq/abstention.py": {
+      "bytes": 2882,
+      "sha256": "2f11eadd5808749d2c9a971151dcbe2b8a570cc6f2f0dbeff5815170b23fd996"
+    },
+    "scuq/__init__.py": {
+      "bytes": 496,
+      "sha256": "099289878f07d6dd8db6038bcd713cc262791c717b27350b7c9dd26c963c3cd7"
+    },
+    "scuq/calibration/rank_calibration.py": {
+      "bytes": 4460,
+      "sha256": "04fcb3a701195d3f007e4ef129e66878d92321704e3d98d4321bcd7887f9c681"
+    },
+    "scuq/calibration/__init__.py": {
+      "bytes": 165,
+      "sha256": "b05bf9e8fdbc1f0a277b76132645e3983fc85f3ca787aa3773d8c8748a7c6655"
+    },
+    "scuq/uq/report_uq.py": {
+      "bytes": 11537,
+      "sha256": "1bd3a99f4a05aa13deec4efd0c14470aa6c3f88b756ff652e9d9e889a4c9c0db"
+    },
+    "scuq/uq/sentence_uq.py": {
+      "bytes": 4280,
+      "sha256": "3f110b12ce717c760b02709bf6dc89853d5236c371b580dd05afcb23977a1902"
+    },
+    "scuq/uq/__init__.py": {
+      "bytes": 437,
+      "sha256": "668d7816d770d7122dd0717cfd921a01e66245c73473be29be038ba13b00755a"
+    },
+    "scuq/uq/baselines.py": {
+      "bytes": 1654,
+      "sha256": "3e6b04e3072b9ee79dc94b7a34be6247362826e8c2f43224e3fa6fb15341f58b"
+    }
+  },
+  "source_inventory_sha256": "8d58f3185bc144eef0aad02d644fd6c09521fbeccc9e1fbd337b9b076735c920",
+  "metadata_only": true,
+  "legacy_results_included": false,
+  "radgraph_weights_not_covered": true,
+  "license_provenance": {
+    "declared": "MIT",
+    "path": "LICENSE",
+    "sha256": "ba2de420ed407438b9379be5de73f6747017263073be801c28ef531d0a9da7f6",
+    "source": "https://github.com/BU-DEPEND-Lab/SCUQ-RRG/blob/0e7bc7f55e73df34ef8a6653e46ab8f84a05f808/LICENSE",
+    "scope": "SCUQ source code only; RadGraph and encoder assets have separate provenance"
+  }
+}

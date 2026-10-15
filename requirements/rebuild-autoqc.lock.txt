@@ -1,0 +1,17 @@
+# Linux x86_64; Python 3.10.12; audited 2026-09-22.
+# Project dependency closure only; host OS packages and credentials omitted.
+# Source: maintenance/rebuild_20260922/environment_audit.remote.json.
+# New environments only; do not install into a running experiment environment.
+imageio==2.37.4
+lazy-loader==0.5
+networkx==3.4.2
+numpy==2.2.6
+opencv-python-headless==4.11.0.86
+packaging==26.3
+pillow==12.3.0
+pip==26.2.1
+scikit-image==0.25.2
+scipy==1.15.3
+setuptools==84.0.0
+tifffile==2025.5.10
+wheel==0.48.0

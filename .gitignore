@@ -14,3 +14,16 @@ __pycache__/
 /build/
 /dist/
 *.log
+/asset_staging/
+/private_data/
+/restricted_data/
+/local_results/
+baselines/**/checkpoints/
+baselines/**/upstream/
+baselines/**/verification_receipts/
+*.joblib
+*.pkl
+*.dcm
+*.dicom
+*.xlsx
+*.xls

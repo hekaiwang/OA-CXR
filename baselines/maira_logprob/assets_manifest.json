@@ -1,0 +1,103 @@
+{
+  "schema": "oa-cxr-report-assets-v1",
+  "method": "maira_shared",
+  "asset_root": "model/maira-2/795a2b1cd4a310624b4e3d14b5a23e41fd273deb",
+  "revision": "795a2b1cd4a310624b4e3d14b5a23e41fd273deb",
+  "files": {
+    ".gitattributes": {
+      "bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    "LICENSE": {
+      "bytes": 10615,
+      "sha256": "de02ceff33401253712fb08972715c3a33763444f6d6f3f03551f9aa4410df55"
+    },
+    "README.md": {
+      "bytes": 14138,
+      "sha256": "9c27ea4c930e3ff88ea90c9762c0cfc9eaa1547751ef10a0a97c17438c028273"
+    },
+    "added_tokens.json": {
+      "bytes": 3723,
+      "sha256": "c90f72c5037e99a4359da5692148f5dbf9894cc24ecfe03b571910b450058b5a"
+    },
+    "chat_template.json": {
+      "bytes": 611,
+      "sha256": "b595af7fc19045198a91efdcc722d4dd08af31a93492d05d42037b3783ac397a"
+    },
+    "config.json": {
+      "bytes": 2401,
+      "sha256": "dbfdaf64818f638de41522b7bcadaf7607e7f8828356e554191a8d05d6862fc8"
+    },
+    "configuration_maira2.py": {
+      "bytes": 1061,
+      "sha256": "d4af0f69f658d87283d9447668531da9c5389c33f014ee8fad7541b77ec13922"
+    },
+    "generation_config.json": {
+      "bytes": 179,
+      "sha256": "e7a230ce62c6c2d73f0fe3beb08a22becda01b3726017398cf3c39fbb69520d5"
+    },
+    "model-00001-of-00006.safetensors": {
+      "bytes": 4955289768,
+      "sha256": "e899381d0b4def093d86a599663831282240a57676bd0f6b9646c37c83dce682"
+    },
+    "model-00002-of-00006.safetensors": {
+      "bytes": 4857207664,
+      "sha256": "1309c85392505e2fc421c741b7f3b56f4146f24662e26837220f32d53401aa80"
+    },
+    "model-00003-of-00006.safetensors": {
+      "bytes": 4857207704,
+      "sha256": "95ef725a26f95751c4e181fa44230b5793a297fc84928532797b0c51947e29e7"
+    },
+    "model-00004-of-00006.safetensors": {
+      "bytes": 4857207704,
+      "sha256": "735d55ba903a0a5733af227fea50da1588588a9bf6512b3747acda91184a96df"
+    },
+    "model-00005-of-00006.safetensors": {
+      "bytes": 4857207704,
+      "sha256": "38a7879c501f697864a36ca338866be4d45dfb2fc9b8d4f995d65cc0e984bac5"
+    },
+    "model-00006-of-00006.safetensors": {
+      "bytes": 3136688192,
+      "sha256": "9131ce3ccd96fb1c2654048ba8fb8e4bb9eb131b4395d06c5c1330d0d608fb72"
+    },
+    "model.safetensors.index.json": {
+      "bytes": 49835,
+      "sha256": "744f8349aaed9c254c9c86a987df31888129dbdfd97754578376264740035bb9"
+    },
+    "modeling_maira2.py": {
+      "bytes": 4747,
+      "sha256": "b275182782505a5b0bdad1d66890bb0be236e3417edc0fb713171fe5b8e78bb2"
+    },
+    "preprocessor_config.json": {
+      "bytes": 560,
+      "sha256": "f3331f81e0f86fcee8d2867fc706f82109093a0ce982dc4c9d5459659b2cc0fa"
+    },
+    "processing_maira2.py": {
+      "bytes": 27708,
+      "sha256": "aae26529eedf242191ed1d9492fae28236bbf397824d44782e1f840dc7d6fe11"
+    },
+    "processor_config.json": {
+      "bytes": 405,
+      "sha256": "22702ddac06f4a4b66767b8b64dff5a54a658064e8f40d8c967ddc75f9afebfb"
+    },
+    "special_tokens_map.json": {
+      "bytes": 552,
+      "sha256": "4859e5dbde90e059988a0a2136d8df3f2773d4d2fc4c4543690028f0b2166e7f"
+    },
+    "tokenizer.json": {
+      "bytes": 3656334,
+      "sha256": "3ecf4a877bb11bb1ff5318f0bc2d32c8eb072fa06e73b648de0c2e088aec3253"
+    },
+    "tokenizer.model": {
+      "bytes": 499723,
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+    },
+    "tokenizer_config.json": {
+      "bytes": 37032,
+      "sha256": "40d92170570d7304ab47f9bbfebf5179d365ec62093bc24f1f9ab4d4d30bb150"
+    }
+  },
+  "legacy_results_included": false,
+  "upstream": "https://huggingface.co/microsoft/maira-2",
+  "sharing": "single official model reused by all new report confidence baselines"
+}

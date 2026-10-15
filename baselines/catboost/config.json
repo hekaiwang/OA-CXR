@@ -1,0 +1,33 @@
+{
+  "schema": "oa-cxr-baseline-config-v1",
+  "method": "catboost",
+  "display_name": "CatBoost",
+  "role": "same_feature_learner",
+  "full_original_paper_reproduction": false,
+  "upstream": "https://github.com/catboost/catboost",
+  "score_direction": "higher_is_more_retained_or_more_confident",
+  "clinical_support_probability": false,
+  "new_experiment_status": "pending",
+  "hyperparameter_search": false,
+  "training": "new_fit_only",
+  "minimum_fit_source_images": 10000,
+  "parameters": {
+    "iterations": 400,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "loss_function": "RMSE",
+    "random_seed": 17,
+    "task_type": "CPU",
+    "thread_count": 4,
+    "allow_writing_files": false,
+    "verbose": false,
+    "l2_leaf_reg": 3.0
+  },
+  "feature_contract": "oa-cxr-tabular-dataset-v1",
+  "implementation": "baselines.tabular",
+  "prediction_clip": [
+    0,
+    1
+  ],
+  "accept_legacy_checkpoint": false
+}

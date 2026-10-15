@@ -1,0 +1,24 @@
+{
+  "schema": "oa-cxr-baseline-config-v1",
+  "method": "autoqc",
+  "display_name": "AutoQC CXR-NIQE distance",
+  "role": "external_score_adaptation",
+  "full_original_paper_reproduction": false,
+  "upstream": "https://gitlab.developers.cam.ac.uk/maths/cia/covid-19-projects/autoqc",
+  "score_direction": "higher_is_more_retained_or_more_confident",
+  "clinical_support_probability": false,
+  "new_experiment_status": "pending",
+  "hyperparameter_search": false,
+  "training": "frozen_official_assets_no_fitting",
+  "adapter_implementation_status": "implemented_contract_tested",
+  "asset_revision": "d8a68cfb0d14f48a1db45edf72a48d7ac2178414",
+  "asset_sha256": null,
+  "execution_entrypoint": "python -m baselines.autoqc.run",
+  "score_contract": "baselines/SCORE_CONTRACT.md",
+  "full_new_cohort_run_completed": false,
+  "asset_root": "baselines/autoqc/checkpoints/pretrained",
+  "assets_manifest": {
+    "path": "assets_manifest.json",
+    "sha256": "851ddec587db4fbd4b16d3556fb29e3d4ca25d1a9a521a167a0ea1bc6ca661d5"
+  }
+}

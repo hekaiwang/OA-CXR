@@ -1,0 +1,105 @@
+{
+  "schema": "oa-cxr-report-assets-v1",
+  "method": "scuq_radgraph",
+  "asset_root": "baselines/scuq_radgraph/checkpoints/pretrained/radgraph",
+  "revision": "6646433b3ad83a10f6e141db76d0ece44312b236",
+  "files": {
+    "radgraph/config.json": {
+      "bytes": 3368,
+      "sha256": "602ecdc439e0292e137b505e28b9e3c96a838e0240a0e1280bbabb5bd1e8bc68"
+    },
+    "radgraph/weights.th": {
+      "bytes": 466273182,
+      "sha256": "34a529d7ffee36ad9196a0ebd84a6c911948a2c5ba9f3d8c1024c4d264719cbc"
+    },
+    "radgraph/vocabulary/radgraph__ner_labels.txt": {
+      "bytes": 29,
+      "sha256": "0678ca7da64087e6b87b3e49a258487c1e693287407b22328b03f3d970faf941"
+    },
+    "radgraph/vocabulary/.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "radgraph/vocabulary/non_padded_namespaces.txt": {
+      "bytes": 14,
+      "sha256": "863044919d9f9c1c04aba282ac981ab0157d6ab08737a96c72f7e15887911db0"
+    },
+    "radgraph/vocabulary/radgraph__relation_labels.txt": {
+      "bytes": 32,
+      "sha256": "cb735684302c8abb3a906adf01be34d2205473f146dc6e90c6ba9ea5d65082b9"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/refs/main": {
+      "bytes": 40,
+      "sha256": "daf4a2bf7d5c60ffaa975432a983820c96b878ab819a0330b56226749ad0542b"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/pytorch_model.bin": {
+      "bytes": 440474434,
+      "sha256": "ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/config.json": {
+      "bytes": 385,
+      "sha256": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/vocab.txt": {
+      "bytes": 226150,
+      "sha256": "79489a52be45e6fa033521e8ce8e4f62aedc0a742ee2aa6fc04667e5b0b1454d"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/tokenizer_config.json": {
+      "bytes": 28,
+      "sha256": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/f8a8cd37533eee7ab2f72c09890b360824352953": {
+      "bytes": 385,
+      "sha256": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193": {
+      "bytes": 440474434,
+      "sha256": "ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/a661b1a138dac6dc5590367402d100765010ffd6": {
+      "bytes": 28,
+      "sha256": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1"
+    },
+    "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/9d595d9c20feef7012f174efaaa5eb621910588e": {
+      "bytes": 226150,
+      "sha256": "79489a52be45e6fa033521e8ce8e4f62aedc0a742ee2aa6fc04667e5b0b1454d"
+    }
+  },
+  "original_metadata": {
+    "model_type": "radgraph",
+    "repository": "StanfordAIMI/RRG_scorers",
+    "revision": "6646433b3ad83a10f6e141db76d0ece44312b236",
+    "encoder": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+    "encoder_revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+    "files_sha256": {
+      "radgraph/config.json": "602ecdc439e0292e137b505e28b9e3c96a838e0240a0e1280bbabb5bd1e8bc68",
+      "radgraph/weights.th": "34a529d7ffee36ad9196a0ebd84a6c911948a2c5ba9f3d8c1024c4d264719cbc",
+      "radgraph/vocabulary/radgraph__ner_labels.txt": "0678ca7da64087e6b87b3e49a258487c1e693287407b22328b03f3d970faf941",
+      "radgraph/vocabulary/.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "radgraph/vocabulary/non_padded_namespaces.txt": "863044919d9f9c1c04aba282ac981ab0157d6ab08737a96c72f7e15887911db0",
+      "radgraph/vocabulary/radgraph__relation_labels.txt": "cb735684302c8abb3a906adf01be34d2205473f146dc6e90c6ba9ea5d65082b9",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/refs/main": "daf4a2bf7d5c60ffaa975432a983820c96b878ab819a0330b56226749ad0542b",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/pytorch_model.bin": "ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/config.json": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/vocab.txt": "79489a52be45e6fa033521e8ce8e4f62aedc0a742ee2aa6fc04667e5b0b1454d",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/tokenizer_config.json": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/f8a8cd37533eee7ab2f72c09890b360824352953": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193": "ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/a661b1a138dac6dc5590367402d100765010ffd6": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1",
+      "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/9d595d9c20feef7012f174efaaa5eb621910588e": "79489a52be45e6fa033521e8ce8e4f62aedc0a742ee2aa6fc04667e5b0b1454d"
+    },
+    "clinical_labels_for_current_cohort": false
+  },
+  "legacy_results_included": false,
+  "license_provenance": {
+    "radgraph_model_card": {
+      "declared": "MIT",
+      "source": "https://huggingface.co/StanfordAIMI/RRG_scorers/blob/6646433b3ad83a10f6e141db76d0ece44312b236/README.md",
+      "evidence": "Official pinned model card inspected: license: mit"
+    },
+    "encoder": {
+      "declared": "Separate encoder license text not retained/verified in this asset snapshot; do not assert all components share one license.",
+      "source": "https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/tree/e1354b7a3a09615f6aba48dfad4b7a613eef7062"
+    }
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "schema": "oa-cxr-verified-download-sources-v1",
+  "verified_at": 1790094168.8955016,
+  "model_weights_downloaded": false,
+  "runtime_manifests_modified": false,
+  "bindings": {
+    "scuq_source": {
+      "manifest_sha256": "c19d940b6da7ea33ef769bcfdf8ab7199b1e05e1d713db365453dfa71ccf50e8",
+      "recipes": {
+        "pyproject.toml": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/faa3fa41294d8cbe044d766b17069915e57e5eea",
+          "git_blob_sha1": "faa3fa41294d8cbe044d766b17069915e57e5eea",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 1769,
+          "sha256": "bb9ec14da8899bcced40d2a1c996a9b52d8bd60d1569f59cb89f7c14cf1b3ef6"
+        },
+        "LICENSE": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/9805e346c71c0ba95f8d812d684fc003dc7dfc60",
+          "git_blob_sha1": "9805e346c71c0ba95f8d812d684fc003dc7dfc60",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 1068,
+          "sha256": "ba2de420ed407438b9379be5de73f6747017263073be801c28ef531d0a9da7f6"
+        },
+        "requirements.txt": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/ff7a81af40f942daf1ca55f02fec3f4fda7ca9b6",
+          "git_blob_sha1": "ff7a81af40f942daf1ca55f02fec3f4fda7ca9b6",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 285,
+          "sha256": "58ea984c877aabb3fad68cd2a76944b8c3959181f5735aeb7175aa1966a679e7"
+        },
+        "scuq/utils.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/186bac18a1c9f24520ea3272a1a7f1055f10124f",
+          "git_blob_sha1": "186bac18a1c9f24520ea3272a1a7f1055f10124f",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 1372,
+          "sha256": "2ae1ef644ae0073c57251726c729ea875ff976a30c6ef9714917a4dc5986e135"
+        },
+        "scuq/abstention.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/f9f6d9d15330c4278ef0f24e0829cd8e1697c028",
+          "git_blob_sha1": "f9f6d9d15330c4278ef0f24e0829cd8e1697c028",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 2882,
+          "sha256": "2f11eadd5808749d2c9a971151dcbe2b8a570cc6f2f0dbeff5815170b23fd996"
+        },
+        "scuq/__init__.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/40a4eff1aa03e7740d5f7a59d7d39c3998b5927a",
+          "git_blob_sha1": "40a4eff1aa03e7740d5f7a59d7d39c3998b5927a",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 496,
+          "sha256": "099289878f07d6dd8db6038bcd713cc262791c717b27350b7c9dd26c963c3cd7"
+        },
+        "scuq/calibration/rank_calibration.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/6f09b7ca88c5a32bf25a85d26c47792e1fbbc32e",
+          "git_blob_sha1": "6f09b7ca88c5a32bf25a85d26c47792e1fbbc32e",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 4460,
+          "sha256": "04fcb3a701195d3f007e4ef129e66878d92321704e3d98d4321bcd7887f9c681"
+        },
+        "scuq/calibration/__init__.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/30fee22f5878b7e6cc4cc4b35757e268805072cc",
+          "git_blob_sha1": "30fee22f5878b7e6cc4cc4b35757e268805072cc",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 165,
+          "sha256": "b05bf9e8fdbc1f0a277b76132645e3983fc85f3ca787aa3773d8c8748a7c6655"
+        },
+        "scuq/uq/report_uq.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/51cba949ed47403bc5713e380f3f725aa1735ee7",
+          "git_blob_sha1": "51cba949ed47403bc5713e380f3f725aa1735ee7",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 11537,
+          "sha256": "1bd3a99f4a05aa13deec4efd0c14470aa6c3f88b756ff652e9d9e889a4c9c0db"
+        },
+        "scuq/uq/sentence_uq.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/837e52dc556a1db9d49e30c80d9c992c7878229b",
+          "git_blob_sha1": "837e52dc556a1db9d49e30c80d9c992c7878229b",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 4280,
+          "sha256": "3f110b12ce717c760b02709bf6dc89853d5236c371b580dd05afcb23977a1902"
+        },
+        "scuq/uq/__init__.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/5b41717028177137a9c459a007e616f4594cd298",
+          "git_blob_sha1": "5b41717028177137a9c459a007e616f4594cd298",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 437,
+          "sha256": "668d7816d770d7122dd0717cfd921a01e66245c73473be29be038ba13b00755a"
+        },
+        "scuq/uq/baselines.py": {
+          "provider": "github_blob",
+          "url": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/blobs/a498487ca5032a4c156427baf3ca2ab868732652",
+          "git_blob_sha1": "a498487ca5032a4c156427baf3ca2ab868732652",
+          "repository": "BU-DEPEND-Lab/SCUQ-RRG",
+          "revision": "0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+          "bytes": 1654,
+          "sha256": "3e6b04e3072b9ee79dc94b7a34be6247362826e8c2f43224e3fa6fb15341f58b"
+        }
+      },
+      "evidence": {
+        "commit_api": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/commits/0e7bc7f55e73df34ef8a6653e46ab8f84a05f808",
+        "tree_api": "https://api.github.com/repos/BU-DEPEND-Lab/SCUQ-RRG/git/trees/68adbcc05a85d23d36a913a44753d9246fee58dc?recursive=1",
+        "git_tree_sha": "68adbcc05a85d23d36a913a44753d9246fee58dc",
+        "all_roster_source_bytes_sha256_verified_against_official_git_blobs": true
+      }
+    },
+    "scuq_radgraph": {
+      "manifest_sha256": "cd84f2edcab16d86bad38de44f450d875b82cb16f69d69eee2fdcdc872dbb259",
+      "recipes": {
+        "radgraph/config.json": {
+          "provider": "archive_member",
+          "archive": "radgraph_official",
+          "member": "config.json",
+          "bytes": 3368,
+          "sha256": "602ecdc439e0292e137b505e28b9e3c96a838e0240a0e1280bbabb5bd1e8bc68"
+        },
+        "radgraph/weights.th": {
+          "provider": "archive_member",
+          "archive": "radgraph_official",
+          "member": "weights.th",
+          "bytes": 466273182,
+          "sha256": "34a529d7ffee36ad9196a0ebd84a6c911948a2c5ba9f3d8c1024c4d264719cbc"
+        },
+        "radgraph/vocabulary/radgraph__ner_labels.txt": {
+          "provider": "archive_member",
+          "archive": "radgraph_official",
+          "member": "vocabulary/radgraph__ner_labels.txt",
+          "bytes": 29,
+          "sha256": "0678ca7da64087e6b87b3e49a258487c1e693287407b22328b03f3d970faf941"
+        },
+        "radgraph/vocabulary/.lock": {
+          "provider": "archive_member",
+          "archive": "radgraph_official",
+          "member": "vocabulary/.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "radgraph/vocabulary/non_padded_namespaces.txt": {
+          "provider": "archive_member",
+          "archive": "radgraph_official",
+          "member": "vocabulary/non_padded_namespaces.txt",
+          "bytes": 14,
+          "sha256": "863044919d9f9c1c04aba282ac981ab0157d6ab08737a96c72f7e15887911db0"
+        },
+        "radgraph/vocabulary/radgraph__relation_labels.txt": {
+          "provider": "archive_member",
+          "archive": "radgraph_official",
+          "member": "vocabulary/radgraph__relation_labels.txt",
+          "bytes": 32,
+          "sha256": "cb735684302c8abb3a906adf01be34d2205473f146dc6e90c6ba9ea5d65082b9"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/refs/main": {
+          "provider": "literal_utf8",
+          "text": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+          "bytes": 40,
+          "sha256": "daf4a2bf7d5c60ffaa975432a983820c96b878ab819a0330b56226749ad0542b"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/pytorch_model.bin": {
+          "provider": "symlink",
+          "target": "../../blobs/ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193",
+          "resolved_relative": "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193",
+          "bytes": 440474434,
+          "sha256": "ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/config.json": {
+          "provider": "symlink",
+          "target": "../../blobs/f8a8cd37533eee7ab2f72c09890b360824352953",
+          "resolved_relative": "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/f8a8cd37533eee7ab2f72c09890b360824352953",
+          "bytes": 385,
+          "sha256": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/vocab.txt": {
+          "provider": "symlink",
+          "target": "../../blobs/9d595d9c20feef7012f174efaaa5eb621910588e",
+          "resolved_relative": "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/9d595d9c20feef7012f174efaaa5eb621910588e",
+          "bytes": 226150,
+          "sha256": "79489a52be45e6fa033521e8ce8e4f62aedc0a742ee2aa6fc04667e5b0b1454d"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/snapshots/e1354b7a3a09615f6aba48dfad4b7a613eef7062/tokenizer_config.json": {
+          "provider": "symlink",
+          "target": "../../blobs/a661b1a138dac6dc5590367402d100765010ffd6",
+          "resolved_relative": "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/a661b1a138dac6dc5590367402d100765010ffd6",
+          "bytes": 28,
+          "sha256": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/f8a8cd37533eee7ab2f72c09890b360824352953": {
+          "provider": "huggingface",
+          "repository": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+          "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+          "filename": "config.json",
+          "bytes": 385,
+          "sha256": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193": {
+          "provider": "huggingface",
+          "repository": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+          "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+          "filename": "pytorch_model.bin",
+          "bytes": 440474434,
+          "sha256": "ad7bbb66376cfd6b2db3447192b034efe016337cbef135c35c411fd61b13c193"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/a661b1a138dac6dc5590367402d100765010ffd6": {
+          "provider": "huggingface",
+          "repository": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+          "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+          "filename": "tokenizer_config.json",
+          "bytes": 28,
+          "sha256": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1"
+        },
+        "hf/hub/models--microsoft--BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/blobs/9d595d9c20feef7012f174efaaa5eb621910588e": {
+          "provider": "huggingface",
+          "repository": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+          "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+          "filename": "vocab.txt",
+          "bytes": 226150,
+          "sha256": "79489a52be45e6fa033521e8ce8e4f62aedc0a742ee2aa6fc04667e5b0b1454d"
+        }
+      },
+      "archives": {
+        "radgraph_official": {
+          "provider": "huggingface",
+          "repository": "StanfordAIMI/RRG_scorers",
+          "revision": "6646433b3ad83a10f6e141db76d0ece44312b236",
+          "filename": "radgraph.tar.gz",
+          "bytes": 432402434,
+          "sha256": "7808499d3dc6c37859d3283a4258be0364104420224aeae7395f2f0f9c28bbb9"
+        }
+      },
+      "evidence": {
+        "model_api": "https://huggingface.co/api/models/StanfordAIMI/RRG_scorers/revision/6646433b3ad83a10f6e141db76d0ece44312b236?blobs=true",
+        "encoder_api": "https://huggingface.co/api/models/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext/revision/e1354b7a3a09615f6aba48dfad4b7a613eef7062?blobs=true",
+        "archive_sha_matches_previously_verified_retained_asset": true,
+        "download_api_source": "radgraph 0.1.18 radgraph.py:38,96-99 and utils.py:21-28",
+        "encoder_cache_layout_source": "SHA-verified retained snapshot/blobs and four relative symlinks"
+      }
+    }
+  }
+}

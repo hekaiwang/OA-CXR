@@ -104,11 +104,17 @@ were not replaced by this validation run.
 
 ## Report review and benchmark scope
 
+The subsequent baseline release adds the 15 external comparison adaptations,
+portable commands and public aggregate reference metrics; see [BASELINES.md](BASELINES.md).
+The dated validation records above describe the original OA-only release.
+Private-cohort data availability is described in [PRIVATE_DATA.md](PRIVATE_DATA.md).
+
 The learned OA scoring method is fully represented by the released image model,
 readout and region query definitions. The historical report study additionally
 used externally licensed MAIRA-2, statement eligibility rules and fixed review
-budgets. The image-model release does not mirror restricted generator weights
-or automatically reproduce all historical baseline/report/Robust/LOSO tables.
+budgets. The release does not mirror restricted generator weights or include all
+historical Robust/LOSO orchestration. The baseline guide supplies commands for
+the external comparisons and fixed-report scoring.
 Original statement extraction and geometric metric source code are included
 for inspection. Full baseline comparisons must also obtain and run their own
 independently licensed assets.

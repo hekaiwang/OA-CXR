@@ -1,0 +1,21 @@
+{
+  "schema": "oa-cxr-new-maira-generation-config-v1",
+  "backend": "maira",
+  "model_revision": "795a2b1cd4a310624b4e3d14b5a23e41fd273deb",
+  "processor_revision": "795a2b1cd4a310624b4e3d14b5a23e41fd273deb",
+  "device": "cuda:0",
+  "dtype": "bfloat16",
+  "seed": 17,
+  "local_files_only": true,
+  "batch_size": 16,
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 512,
+    "use_cache": true,
+    "num_beams": 1
+  },
+  "assets_manifest": {
+    "path": "assets_manifest.json",
+    "sha256": "0802ae39bc1c5826f34095f99f65f370915ca39bcf1e8f6c9ead66ebf973c55f"
+  }
+}

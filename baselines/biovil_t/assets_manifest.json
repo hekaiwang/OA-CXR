@@ -1,0 +1,57 @@
+{
+  "schema": "oa-cxr-baseline-assets-v1",
+  "method": "biovil_t",
+  "asset_root": "baselines/biovil_t/checkpoints/pretrained",
+  "revision": "692f09e9be1bfe5fdd5f3efdd0e1eca7d2c10b23",
+  "upstream": "https://huggingface.co/microsoft/BiomedVLP-BioViL-T",
+  "files": {
+    "special_tokens_map.json": {
+      "bytes": 112,
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+    },
+    "config.json": {
+      "bytes": 803,
+      "sha256": "58a8ead5bdbe8b71e396cd094746779dc929954841282f94b6c100f0fe009a88"
+    },
+    "configuration_cxrbert.py": {
+      "bytes": 888,
+      "sha256": "857366a973291d09ea8e19cfe749fc801e81fae9ae9ce0c9b462c7c26cb67e1f"
+    },
+    "model.safetensors": {
+      "bytes": 440909232,
+      "sha256": "70bed344872e0a4f4dca2352564c44f44cb7a9cfcac3d878be2dd08a5fff9aba"
+    },
+    "modeling_cxrbert.py": {
+      "bytes": 5876,
+      "sha256": "88f0f0d1fcf6b5c91fd3bebeec0c3bfee271103db7c13c5229e3f4807cb17ac2"
+    },
+    "biovil_t_image_model_proj_size_128.pt": {
+      "bytes": 109745561,
+      "sha256": "b2399d73dc2a68b9f3a1950e864ae0ecd24093fb07aa459d7e65807ebdc0fb77"
+    },
+    "vocab.txt": {
+      "bytes": 235402,
+      "sha256": "e025f479c3a7ce6e248971bfe1b409708db0439e9488d30e254f81f27f75d678"
+    },
+    "tokenizer_config.json": {
+      "bytes": 741,
+      "sha256": "971d7e13339bf707b96ed1b2196371a84bf66f6cafcc9ac55feadd44d3031fd9"
+    },
+    "README.md": {
+      "bytes": 12722,
+      "sha256": "24fd9534b62368919f5cdc144e473d1611fad4347994ac634a9e8dc1acfc4965"
+    }
+  },
+  "source_inventory_sha256": "8d58f3185bc144eef0aad02d644fd6c09521fbeccc9e1fbd337b9b076735c920",
+  "metadata_only": true,
+  "legacy_results_included": false,
+  "license_provenance": {
+    "model_card": {
+      "declared": "MIT",
+      "path": "README.md",
+      "source": "https://huggingface.co/microsoft/BiomedVLP-BioViL-T/blob/692f09e9be1bfe5fdd5f3efdd0e1eca7d2c10b23/README.md",
+      "evidence": "Pinned model card YAML: license: mit",
+      "scope": "Declaration applies to this upstream snapshot; preserve model-card limitations and citations."
+    }
+  }
+}

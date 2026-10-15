@@ -1,0 +1,48 @@
+{
+  "schema": "oa-cxr-baseline-assets-v1",
+  "method": "autoqc",
+  "asset_root": "baselines/autoqc/checkpoints/pretrained",
+  "revision": "d8a68cfb0d14f48a1db45edf72a48d7ac2178414",
+  "upstream": "https://gitlab.developers.cam.ac.uk/maths/cia/covid-19-projects/autoqc",
+  "files": {
+    "auto_qc/classification/live_qa/niqe.py": {
+      "bytes": 1764,
+      "sha256": "b21d5dd733c81d13ec1181730efa9355f93b16f28346dc3b64add9a1585c0476",
+      "url": "https://gitlab.developers.cam.ac.uk/api/v4/projects/7995/repository/files/auto_qc%2Fclassification%2Flive_qa%2Fniqe.py/raw?ref=d8a68cfb0d14f48a1db45edf72a48d7ac2178414"
+    },
+    "auto_qc/classification/live_qa/utils.py": {
+      "bytes": 7282,
+      "sha256": "41e292fca0754a2c2af851a554edc7b92365f485fcda562b65a2023046477258",
+      "url": "https://gitlab.developers.cam.ac.uk/api/v4/projects/7995/repository/files/auto_qc%2Fclassification%2Flive_qa%2Futils.py/raw?ref=d8a68cfb0d14f48a1db45edf72a48d7ac2178414"
+    },
+    "auto_qc/classification/live_qa/cxr_model_params.mat": {
+      "bytes": 8352,
+      "sha256": "5ddd77135e1d3026d3eefea68c911e3fd65a6ff09a2368bb012dc5aa02d82999",
+      "url": "https://gitlab.developers.cam.ac.uk/api/v4/projects/7995/repository/files/auto_qc%2Fclassification%2Flive_qa%2Fcxr_model_params.mat/raw?ref=d8a68cfb0d14f48a1db45edf72a48d7ac2178414"
+    },
+    "LICENSE.md": {
+      "bytes": 1138,
+      "sha256": "65a73bed89e7740ce6dcbe5ea9a3cd3859936055e95017e3691fd1c091347f6d",
+      "url": "https://gitlab.developers.cam.ac.uk/api/v4/projects/7995/repository/files/LICENSE.md/raw?ref=d8a68cfb0d14f48a1db45edf72a48d7ac2178414"
+    },
+    "auto_qc/classification/live_qa/LICENSE": {
+      "bytes": 1557,
+      "sha256": "cf889a48c10af96480dd50135d65c119b7707430dc298bb3bf782a56743a5c9c",
+      "url": "https://gitlab.developers.cam.ac.uk/api/v4/projects/7995/repository/files/auto_qc%2Fclassification%2Flive_qa%2FLICENSE/raw?ref=d8a68cfb0d14f48a1db45edf72a48d7ac2178414"
+    },
+    "setup.py": {
+      "bytes": 1560,
+      "sha256": "f03be33dab314c8996072fbfda3c8f46998126b54ca9d58ceb16d33d78884fc8",
+      "url": "https://gitlab.developers.cam.ac.uk/api/v4/projects/7995/repository/files/setup.py/raw?ref=d8a68cfb0d14f48a1db45edf72a48d7ac2178414"
+    }
+  },
+  "licenses": {
+    "root": "MIT; LICENSE.md",
+    "embedded_live": "BSD-3-Clause; auto_qc/classification/live_qa/LICENSE",
+    "package_metadata": "setup.py declares GPLv3; retained verbatim, not executed",
+    "cxr_parameters": "No separate parameter license found; supplied in the pinned AutoQC repository",
+    "interpretation": "Upstream license declarations conflict; do not relabel the entire distribution MIT"
+  },
+  "metadata_only": true,
+  "legacy_results_included": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "oa-cxr-baseline-config-v1",
+  "method": "sentence_logprob",
+  "display_name": "Sentence log probability",
+  "role": "generation_score_adaptation",
+  "full_original_paper_reproduction": false,
+  "upstream": "https://huggingface.co/microsoft/maira-2",
+  "score_direction": "higher_is_more_retained_or_more_confident",
+  "clinical_support_probability": false,
+  "new_experiment_status": "pending",
+  "hyperparameter_search": false,
+  "training": "frozen_official_assets_or_same_new_maira_reports",
+  "adapter_implementation_status": "implemented_contract_tested_pending_gpu_smoke",
+  "asset_revision": "795a2b1cd4a310624b4e3d14b5a23e41fd273deb",
+  "asset_sha256": null,
+  "execution_entrypoint": "python -m baselines.sentence_logprob.run",
+  "score_contract": "baselines/SCORE_CONTRACT.md",
+  "full_new_cohort_run_completed": false,
+  "shared_generation_config": "../maira_logprob/generation_config.json"
+}

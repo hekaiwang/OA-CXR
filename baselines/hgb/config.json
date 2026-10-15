@@ -1,0 +1,30 @@
+{
+  "schema": "oa-cxr-baseline-config-v1",
+  "method": "hgb",
+  "display_name": "HistGradientBoosting",
+  "role": "same_feature_learner",
+  "full_original_paper_reproduction": false,
+  "upstream": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html",
+  "score_direction": "higher_is_more_retained_or_more_confident",
+  "clinical_support_probability": false,
+  "new_experiment_status": "pending",
+  "hyperparameter_search": false,
+  "training": "new_fit_only",
+  "minimum_fit_source_images": 10000,
+  "parameters": {
+    "loss": "squared_error",
+    "learning_rate": 0.05,
+    "max_iter": 400,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 0.01,
+    "early_stopping": false,
+    "random_state": 17
+  },
+  "feature_contract": "oa-cxr-tabular-dataset-v1",
+  "implementation": "baselines.tabular",
+  "prediction_clip": [
+    0,
+    1
+  ],
+  "accept_legacy_checkpoint": false
+}

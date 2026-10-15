@@ -10,7 +10,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--weights',type=Path,required=True)
     p.add_argument('--cache',type=Path,required=True)
-    p.add_argument('--split',choices=['dev','calibration','test','external_nih','external_shenzhen'],required=True)
+    p.add_argument('--split',choices=['dev','calibration','test','external_nih','external_shenzhen','external_private'],required=True)
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--gpu-uuid')
     p.add_argument('--batch-size',type=int,default=64)
@@ -44,7 +44,7 @@ def main():
     result=dict(schema='oa-cxr-public-evaluation-v1',split=a.split,source_images=len(rows),queries=values.size,
         model_config_sha256=sha256_file(a.weights/'config.json'),datasets={},clinical_support_labels=False,
         execution='CUDA BF16 image / FP32 readout' if device=='cuda' else 'CPU FP32',
-        bootstrap_unit='source image except Kermany filename family; fixed model, not training-seed uncertainty')
+        bootstrap_unit='source image; Kermany filename family; supplied group for private data; fixed model, not training-seed uncertainty')
     for dataset in sorted({r['dataset'] for r in rows}):
         idx=np.array([i for i,r in enumerate(rows) if r['dataset']==dataset]);y=targets[idx];s=values[idx]
         summary=metrics(y.ravel(),s.ravel(),regression=True)
@@ -54,7 +54,7 @@ def main():
             # conservative filename families for Kermany, source images for Shenzhen.
             groups={}
             for i in idx:
-                key=rows[i]['split_group_id'] if dataset=='kermany_v7' else rows[i]['source_id']
+                key=rows[i]['split_group_id'] if dataset=='kermany_v7' or a.split=='external_private' else rows[i]['source_id']
                 groups.setdefault(key,[]).append(i)
             groups=[np.asarray(groups[k]) for k in sorted(groups)]
             abs_sum=np.array([np.abs(values[g].astype(float)-targets[g]).sum() for g in groups])

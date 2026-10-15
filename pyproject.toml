@@ -14,6 +14,9 @@ dependencies = ["numpy==2.2.6", "Pillow==12.3.0", "scipy==1.15.3", "scikit-learn
 training = ["torch==2.6.0", "torchvision==0.21.0", "torchxrayvision==1.5.4"]
 download = ["huggingface-hub>=0.30,<1"]
 dev = ["pytest>=8,<10"]
+baseline-tabular = ["xgboost-cpu==3.0.5", "catboost==1.2.8"]
+baseline-neural = ["tabm==0.0.3", "rtdl-num-embeddings==0.0.12"]
+baseline-encoders = ["open-clip-torch==2.23.0", "timm==0.9.12", "transformers==4.35.2", "gdown==5.2.0"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

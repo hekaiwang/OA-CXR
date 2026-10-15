@@ -1,0 +1,111 @@
+{
+  "schema": "oa-cxr-public-baselines-v1",
+  "methods": [
+    {
+      "id": "hgb",
+      "group": "regression",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "scripts/public/train_baseline.py"
+    },
+    {
+      "id": "xgboost",
+      "group": "regression",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "scripts/public/train_baseline.py"
+    },
+    {
+      "id": "catboost",
+      "group": "regression",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "scripts/public/train_baseline.py"
+    },
+    {
+      "id": "ridge",
+      "group": "regression",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "scripts/public/train_baseline.py"
+    },
+    {
+      "id": "tabm",
+      "group": "regression",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "scripts/public/train_baseline.py"
+    },
+    {
+      "id": "biomedclip",
+      "group": "regression",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "scripts/public/train_baseline.py"
+    },
+    {
+      "id": "chexzero",
+      "group": "regression",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "scripts/public/train_baseline.py"
+    },
+    {
+      "id": "dinov2",
+      "group": "regression",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "scripts/public/train_baseline.py"
+    },
+    {
+      "id": "chexpert",
+      "group": "visual_ranking",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "baselines/chexpert/run.py"
+    },
+    {
+      "id": "autoqc",
+      "group": "visual_ranking",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "baselines/autoqc/run.py"
+    },
+    {
+      "id": "biovil_t",
+      "group": "visual_ranking",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "baselines/biovil_t/run.py"
+    },
+    {
+      "id": "maira_logprob",
+      "group": "report_ranking",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "baselines/maira_logprob/run.py"
+    },
+    {
+      "id": "sentence_logprob",
+      "group": "report_ranking",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "baselines/sentence_logprob/run.py"
+    },
+    {
+      "id": "token_entropy",
+      "group": "report_ranking",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "baselines/token_entropy/run.py"
+    },
+    {
+      "id": "scuq_radgraph",
+      "group": "report_ranking",
+      "internal_version": false,
+      "full_original_paper_reproduction": false,
+      "entrypoint": "baselines/scuq_radgraph/run.py"
+    }
+  ],
+  "scope": "Our task-specific adaptations; not reproduction of every upstream paper experiment"
+}

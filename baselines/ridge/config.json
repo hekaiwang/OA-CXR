@@ -1,0 +1,28 @@
+{
+  "schema": "oa-cxr-baseline-config-v1",
+  "method": "ridge",
+  "display_name": "Standardized Ridge",
+  "role": "same_feature_learner",
+  "full_original_paper_reproduction": false,
+  "upstream": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html",
+  "score_direction": "higher_is_more_retained_or_more_confident",
+  "clinical_support_probability": false,
+  "new_experiment_status": "pending",
+  "hyperparameter_search": false,
+  "training": "new_fit_only",
+  "minimum_fit_source_images": 10000,
+  "parameters": {
+    "alpha": 1.0,
+    "solver": "lsqr",
+    "fit_intercept": true,
+    "tol": 1e-06,
+    "max_iter": 10000
+  },
+  "feature_contract": "oa-cxr-tabular-dataset-v1",
+  "implementation": "baselines.tabular",
+  "prediction_clip": [
+    0,
+    1
+  ],
+  "accept_legacy_checkpoint": false
+}

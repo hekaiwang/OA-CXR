@@ -1,0 +1,178 @@
+{
+  "schema": "oa-cxr-foundation-assets-v1",
+  "method": "chexzero",
+  "status": "completed",
+  "upstream": {
+    "url": "https://github.com/rajpurkarlab/CheXzero.git",
+    "commit": "5c341db0fe0db2f663a2c136c7120a8b303f1d11",
+    "path": "baselines/chexzero/upstream"
+  },
+  "license": "MIT code; NOTICE.md and official README archived; weights linked by authors",
+  "code_commit": "5c341db0fe0db2f663a2c136c7120a8b303f1d11",
+  "files": [
+    {
+      "path": "upstream/.gitignore",
+      "sha256": "af239141408cd80a497c3ed349f32a3d287d5354f896ea18ce6b17c32705c378",
+      "bytes": 144,
+      "role": "code"
+    },
+    {
+      "path": "upstream/LICENSE",
+      "sha256": "df79d7fddeb1395599f38d5f0f4448e9ff9f43aa87c046988f9aef40fdf47cc1",
+      "bytes": 1070,
+      "role": "documentation"
+    },
+    {
+      "path": "upstream/NOTICE.md",
+      "sha256": "a875dbff136eba3e6c35ead19e2fb074b55e01488523be58b94da4e9570ab866",
+      "bytes": 1455,
+      "role": "documentation"
+    },
+    {
+      "path": "upstream/README.md",
+      "sha256": "0387b8787e26b190ff6ffd38862ae78018be15d6e393c50a97d86d33bf1efc28",
+      "bytes": 10366,
+      "role": "documentation"
+    },
+    {
+      "path": "upstream/bpe_simple_vocab_16e6.txt.gz",
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+      "bytes": 1356917,
+      "role": "code"
+    },
+    {
+      "path": "upstream/checkpoints/.gitignore",
+      "sha256": "5bf936e8007c2400d90f24a4fbc0474c7bb28229edb66263d8afefe338f6e76f",
+      "bytes": 17,
+      "role": "code"
+    },
+    {
+      "path": "upstream/clip.py",
+      "sha256": "cad7578b336821be30996c8ce75b573f2445edb72d1238bc2e121453ee93b76f",
+      "bytes": 8350,
+      "role": "code"
+    },
+    {
+      "path": "upstream/data/.gitignore",
+      "sha256": "5bf936e8007c2400d90f24a4fbc0474c7bb28229edb66263d8afefe338f6e76f",
+      "bytes": 17,
+      "role": "code"
+    },
+    {
+      "path": "upstream/data_process.py",
+      "sha256": "8c5c72c6a504914930e5293a9eebbef664b8c23a16872e5cb0e9ce5e21cff574",
+      "bytes": 4889,
+      "role": "code"
+    },
+    {
+      "path": "upstream/eval.py",
+      "sha256": "6dec2d97f531b3a69fc11a1eb2fe8c5295e237b4427600f5b92680eef87dc9da",
+      "bytes": 7586,
+      "role": "code"
+    },
+    {
+      "path": "upstream/metrics.py",
+      "sha256": "f1481f77afa916b4a483261420e47d72697d845676b304bbdabc9f11ed9ab3a3",
+      "bytes": 10851,
+      "role": "code"
+    },
+    {
+      "path": "upstream/model.py",
+      "sha256": "e71725f5690d9f0724d3dfc5dc80e7c10f9e39662ec06c8875de9f154b128c1f",
+      "bytes": 18314,
+      "role": "code"
+    },
+    {
+      "path": "upstream/notebooks/zero_shot.ipynb",
+      "sha256": "fdc1a5a7819d0f9f8271e351d10264d5dd6fa5812f0f50ad8c4930bcf8f93ac4",
+      "bytes": 34244,
+      "role": "code"
+    },
+    {
+      "path": "upstream/predictions/.gitignore",
+      "sha256": "5bf936e8007c2400d90f24a4fbc0474c7bb28229edb66263d8afefe338f6e76f",
+      "bytes": 17,
+      "role": "code"
+    },
+    {
+      "path": "upstream/preprocess_padchest.py",
+      "sha256": "f103493989e6bc97fbb928626587c09b0a70f772b925f14fa49a603f900a95b7",
+      "bytes": 8281,
+      "role": "code"
+    },
+    {
+      "path": "upstream/requirements.txt",
+      "sha256": "2a74b69320d0b8f70c2cff86220e8213c57d7ff764df6a17e165af2b0e75ddab",
+      "bytes": 497,
+      "role": "code"
+    },
+    {
+      "path": "upstream/run_preprocess.py",
+      "sha256": "06a1dc30a85a40c24ad9577bcdd067afa20dee6ea48fd204a565df54d13628e6",
+      "bytes": 2268,
+      "role": "code"
+    },
+    {
+      "path": "upstream/run_train.py",
+      "sha256": "1342c35a0ba3d13334bb46609288636307a10e6198439d97e533c69ea9de05a9",
+      "bytes": 5319,
+      "role": "code"
+    },
+    {
+      "path": "upstream/simple_tokenizer.py",
+      "sha256": "c6c554c66cf1d2d5837a89c23a3ce6ce6076dce3469386d0ece6eb775856787f",
+      "bytes": 5704,
+      "role": "code"
+    },
+    {
+      "path": "upstream/train.py",
+      "sha256": "6913bd8fb580467996fb709494a3ef919fa5e628c937454a04389db96b95098b",
+      "bytes": 8549,
+      "role": "code"
+    },
+    {
+      "path": "upstream/zero_shot.py",
+      "sha256": "010725cda6bba7996946ce0aa826fcd8223bff293f8596ca5cb234fafe2ae548",
+      "bytes": 23516,
+      "role": "code"
+    },
+    {
+      "path": "checkpoints/pretrained/best_128_0.0002_original_15000_0.859.pt",
+      "sha256": "620ee11d836f65104cd77c3764fd11ee787d709b0873ea58ca1acbf89c40c50c",
+      "bytes": 353548709,
+      "role": "weights"
+    }
+  ],
+  "completed_unix": 1790173880.6312096,
+  "official_checkpoint_folder": "https://drive.google.com/drive/folders/1makFLiEMbSleYltaRxw81aBhEDMpVwno",
+  "checkpoint_file_id": "1bGFF8e--30SLZzDhJAL0qLOLhsq5Ff-7",
+  "checkpoint_selection": "Lexicographically first checkpoint in official folder, fixed before task evaluation; single encoder, not ensemble",
+  "official_selected_name": "best_128_0.0002_original_15000_0.859.pt",
+  "loader": {
+    "kind": "chexzero_visual",
+    "weights": "checkpoints/pretrained/best_128_0.0002_original_15000_0.859.pt",
+    "code_root": "upstream"
+  },
+  "cpu_tensor_validation": {
+    "passed": true,
+    "weights_only": true,
+    "tensors": 302,
+    "parameters_and_buffers": 151277313,
+    "representative_shapes": {
+      "visual.positional_embedding": [
+        50,
+        768
+      ],
+      "visual.proj": [
+        768,
+        512
+      ],
+      "visual.conv1.weight": [
+        768,
+        3,
+        32,
+        32
+      ]
+    }
+  }
+}

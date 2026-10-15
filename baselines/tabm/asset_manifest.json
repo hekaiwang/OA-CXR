@@ -1,0 +1,146 @@
+{
+  "schema": "oa-cxr-foundation-assets-v1",
+  "method": "tabm",
+  "status": "completed",
+  "upstream": {
+    "url": "https://github.com/yandex-research/tabm.git",
+    "commit": "28e47ae301c92ec37787dde1ce923a0793f405b4",
+    "path": "baselines/tabm/upstream"
+  },
+  "license": "Apache-2.0",
+  "code_commit": "28e47ae301c92ec37787dde1ce923a0793f405b4",
+  "files": [
+    {
+      "path": "upstream/LICENSE",
+      "sha256": "24330ebf083bc17c1db833b0109ef6ffc9019449330e9e4ec9797c061185c7a6",
+      "bytes": 11340,
+      "role": "documentation"
+    },
+    {
+      "path": "upstream/README.md",
+      "sha256": "302b2d36c3bf226cc98121923ea1881617287a161e25cf9a765b82b26b9d4969",
+      "bytes": 30478,
+      "role": "documentation"
+    },
+    {
+      "path": "upstream/paper/bin/ensemble.py",
+      "sha256": "f8504566fbc70117330f0fe40322be5906d6d12800ac87d6c1951d9d4439b889",
+      "bytes": 4157,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/bin/evaluate.py",
+      "sha256": "a1fc753559e69d4f8c1b1bc47bc31b9416048a262c9dafa9755cabcb0b392430",
+      "bytes": 2899,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/bin/go.py",
+      "sha256": "75185bd5f58206c862766fc0f1dd26fad05c14a96932a0582330fb064ddd6dce",
+      "bytes": 2180,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/bin/model.py",
+      "sha256": "81144b9f520d3e57d9c5b3a8b0dfb1f800191d57dee229148fe88211df15dd19",
+      "bytes": 29596,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/bin/tune.py",
+      "sha256": "16fbe926ea5a6b57c3d5d8a8c43e2e11442bf11cd96700f0f5acd9b00ae40f32",
+      "bytes": 7971,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/lib/__init__.py",
+      "sha256": "72ca7dccf1acfad78771f9f0b7e9c90406873ee537c48bfb1d4c13952cc9c37c",
+      "bytes": 110,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/lib/data.py",
+      "sha256": "1eb8e21beb82919883723fc7af5e89b105409b54fc63eb9f0fb06899ce5e05de",
+      "bytes": 13276,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/lib/deep.py",
+      "sha256": "3ce61b09a60a7762c4f338d467bc2f0ace679d6c5bcaa5f78a2bcf60ae4f91d8",
+      "bytes": 14520,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/lib/env.py",
+      "sha256": "72ac14111e18a29762dda6c630e77d46e6eda520f93fc117837a1e072ba0841d",
+      "bytes": 525,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/lib/metrics.py",
+      "sha256": "4e6a656dc4c2af8119120ef32e8072b44d9985be16d250e0f151c2681ae896da",
+      "bytes": 2226,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/lib/util.py",
+      "sha256": "ac7b4e0f7d02b13f4b4bc285bf224a2e5930bc21bb74ac285e628abe1bffda75",
+      "bytes": 16686,
+      "role": "code"
+    },
+    {
+      "path": "upstream/paper/tools/prepare_tabred.py",
+      "sha256": "b004d98ec93cf850aa3c94ee2b3d700ed2399ec16dd3ef5bcbf05f9bd9f84ae0",
+      "bytes": 1890,
+      "role": "code"
+    },
+    {
+      "path": "upstream/pyproject.toml",
+      "sha256": "943277cecbdb2cbf87e685316170432afc0520e3e0b5d3f717b42b353fb808bb",
+      "bytes": 2213,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tabm.py",
+      "sha256": "fc654af6a16bac53d893a8265c79d7af4ebddcb95ad0d600cc6b6bc6b7317ade",
+      "bytes": 60545,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tabm_reference.py",
+      "sha256": "63893baa6bfb64ab1c07e37ac8a0bfe72b285a3fdc91f2c963404247c10dd29f",
+      "bytes": 22171,
+      "role": "code"
+    },
+    {
+      "path": "upstream/test_code_blocks.py",
+      "sha256": "5b43617e649291c7cc4dc0bd2988520f7708d3d4f70eafab64a786ac15baa2e1",
+      "bytes": 4986,
+      "role": "code"
+    }
+  ],
+  "completed_unix": 1790173938.1575086,
+  "initialization": "Trained from scratch on fit split; no pretrained checkpoint",
+  "cpu_tensor_validation": {
+    "passed": true,
+    "shape": [
+      2,
+      32,
+      1
+    ],
+    "kwargs": {
+      "n_num_features": 11,
+      "d_out": 1,
+      "k": 32,
+      "n_blocks": 3,
+      "d_block": 512,
+      "num_embeddings": null
+    }
+  },
+  "loader": {
+    "kind": "tabm",
+    "code_root": "upstream",
+    "package": "tabm==0.0.3",
+    "pretrained_weights": null
+  }
+}

@@ -1,0 +1,1160 @@
+{
+  "schema": "oa-cxr-foundation-assets-v1",
+  "method": "biomedclip",
+  "status": "completed",
+  "upstream": {
+    "url": "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+    "revision": "9f341de24bfb00180f1b847274256e9b65a3a32e"
+  },
+  "license": "MIT declared in official model card YAML (no separate LICENSE file in model repository); intended use research",
+  "code_commit": "f08f25f3f226bdb538de2b4ed48a9213ba6b179e",
+  "files": [
+    {
+      "path": "upstream/.github/workflows/ci.yml",
+      "sha256": "c4934896902b893a3efc696108f3689345927e2ae07f239234f406f39ead603a",
+      "bytes": 4160,
+      "role": "code"
+    },
+    {
+      "path": "upstream/.github/workflows/clear-cache.yml",
+      "sha256": "0a367b47e8ccfa26b0e2711a2f911e555234873ff75c4c4a986a77a0ee9afd6f",
+      "bytes": 716,
+      "role": "code"
+    },
+    {
+      "path": "upstream/.github/workflows/python-publish.yml",
+      "sha256": "5aca30af7c0416e443f2c958b7e5c17b5e24a0cfb5c0af02d62b1933a0d2d690",
+      "bytes": 1004,
+      "role": "code"
+    },
+    {
+      "path": "upstream/.gitignore",
+      "sha256": "41a6a451d15cef79f9d0ea8cafb0aa3cf4cda70df4f071840b75fd612fd0c71d",
+      "bytes": 2003,
+      "role": "code"
+    },
+    {
+      "path": "upstream/CITATION.cff",
+      "sha256": "9e74d52e9093286f800119186c4b938d0533a36b7098b920905438bb45a79f91",
+      "bytes": 824,
+      "role": "code"
+    },
+    {
+      "path": "upstream/HISTORY.md",
+      "sha256": "0473a750b6a1ba72feb53697a6900f74bfb5da82c8e902cad2c3b5e03b9237fb",
+      "bytes": 4597,
+      "role": "code"
+    },
+    {
+      "path": "upstream/LICENSE",
+      "sha256": "4a5b4f13ea4792a8211a69f32d2b460b6d520e57cd23c6301e707c76a6e97a55",
+      "bytes": 1229,
+      "role": "documentation"
+    },
+    {
+      "path": "upstream/MANIFEST.in",
+      "sha256": "c5ddad55831ff08e9e3dbf1fc70a24337de9575c23d0bb6ccb5f99381a288c36",
+      "bytes": 95,
+      "role": "code"
+    },
+    {
+      "path": "upstream/Makefile",
+      "sha256": "2aab7cec44ef6da33f843b6e532b870fc4cce24748fa4f69fb5f8501dc3ef283",
+      "bytes": 403,
+      "role": "code"
+    },
+    {
+      "path": "upstream/README.md",
+      "sha256": "bc71bcc0c08f6ed1682d44d142f5bcc2b06cf98d87f3d91835607505bae65ae9",
+      "bytes": 28836,
+      "role": "documentation"
+    },
+    {
+      "path": "upstream/docs/CLIP.png",
+      "sha256": "308a3ca4503f1c7a07803916c369d78c4ef501e5ab7fc727da9b5e1d2f9ec85b",
+      "bytes": 252444,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/Interacting_with_open_clip.ipynb",
+      "sha256": "186e1214da6e690db5c9ef4538b717badb7e352c7691d6e0101ce5b05482dddf",
+      "bytes": 6677789,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/Interacting_with_open_coca.ipynb",
+      "sha256": "65f443eb465bc3f4a8d064d205d49b171be36b755264ba8ca52f536cbdda329a",
+      "bytes": 62191,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/LOW_ACC.md",
+      "sha256": "e87bcd8eb5e67748999f052d78b3d84f802c0046b28eb6ebe37599cab85ec377",
+      "bytes": 2841,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/PRETRAINED.md",
+      "sha256": "dba022b8aa89b858a6c935893a498240aafb7a6809ba5ff80c012702ce61085c",
+      "bytes": 10810,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clip_conceptual_captions.md",
+      "sha256": "07b48cba2b61b14f14ed81cedffe765167facbc38cdf82a45c2c6a13eca60008",
+      "bytes": 262,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clip_loss.png",
+      "sha256": "e3ffbdf77b61fccb07e8e91c5d3fe851d5771eab7ec933e94be997f12912237c",
+      "bytes": 42891,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clip_recall.png",
+      "sha256": "f8800d5c6e1292abde9654f5be5996ec5e9942b6996803ee5a8f35bcf6e3949d",
+      "bytes": 50743,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clip_val_loss.png",
+      "sha256": "4aa932010e7a048f469a89783c86e93a0eeeb1c283324876099c88062129acda",
+      "bytes": 43831,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clip_zeroshot.png",
+      "sha256": "eb4ddf5e23a177bbc5b8f31ac79d37a332d3666d5da450ad21dca2bb35b7f27e",
+      "bytes": 58463,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clipa.md",
+      "sha256": "9e0fc29668a3f7e0e9b36ccfb0a9bcb71a2951cf79251a1793190945afb600e3",
+      "bytes": 7041,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clipa_acc_compute.png",
+      "sha256": "ca5ab83e5185c16424851801af0bfbe972e27e91dcb819605a8bd930109d07d0",
+      "bytes": 261592,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clipa_reduce_image_token.png",
+      "sha256": "cd90f60c0acf49feb0731999c0c70234bc0b13b2d347e69174b5c532400f41d0",
+      "bytes": 1086885,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/clipa_reduce_text_token.png",
+      "sha256": "3618b075a2c9b0ecc0ec796d700e2199448da4ab95750aa75ce61af21417691c",
+      "bytes": 16064,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/datacomp_models.md",
+      "sha256": "5cbac3bf2ba05d4afdda1cff5ff35caef2190a8962cabbc1baeeaea7436148be",
+      "bytes": 7372,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/effective_robustness.png",
+      "sha256": "51603ddf1b9407f3fa4e9186580d96acaa27b97aec0333b394a176fc435cd349",
+      "bytes": 1018991,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/inverse_scaling_law.png",
+      "sha256": "9745415b7b257588ca627d6747ebd2c723b479674ba33412c0f7ac973a441826",
+      "bytes": 597352,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/laion2b_clip_zeroshot_b32.png",
+      "sha256": "b0c64dcee9996123102bb1449d6972b810fdaaabfd825f05ea781c22fc9fca3f",
+      "bytes": 245769,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/laion_clip_zeroshot.png",
+      "sha256": "6e3df77ab8bcde02d0a2c21bb47524d2f62eee8deb28cf44624891dab7711cb9",
+      "bytes": 195337,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/laion_clip_zeroshot_b16.png",
+      "sha256": "d726159933713c3a27c727aec132824ec92ca3606d3dca6e6fa76ef9abbf2e17",
+      "bytes": 195897,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/laion_clip_zeroshot_b16_plus_240.png",
+      "sha256": "5e93fd1cf851ffd2a1ae5e4080a6d107ec470152eb201e20c63f2ba59d2f391e",
+      "bytes": 254529,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/laion_clip_zeroshot_l14.png",
+      "sha256": "b4f73b022debf23c31f969859fe9a63c8b360342afadb52db0400e0b9a1d293d",
+      "bytes": 203800,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/laion_openai_compare_b32.jpg",
+      "sha256": "243f242bfaa3dffee517a3c2595a5a34cf0eccd8e4375ddecc287672a8341d57",
+      "bytes": 59505,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/model_profile.csv",
+      "sha256": "ddee2c3340219a473404e5f6b05d5570c9de7a7547a46928b7ab1e4b32d01146",
+      "bytes": 5920,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/openclip_results.csv",
+      "sha256": "57173e9c8d94117f5b4ffb02f3b7a9f4da2e60db4f2cb0fbfc83387d47cea044",
+      "bytes": 36962,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/scaling.png",
+      "sha256": "c955614bdb1e842068384f0b15cef5b7d86de48bf0c159e8d29c3f2a9a11d820",
+      "bytes": 98757,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipa/vit_b16/i50_t16_finetune.sh",
+      "sha256": "4c975c8742ecb066f74e682ef7001d48f8e7a9c4081fd88f3eccd88ab4c3aff4",
+      "bytes": 719,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipa/vit_b16/i50_t16_pretrain.sh",
+      "sha256": "dbd975d4a7196a0560f298d50e77744fe7d7268945661cd061f91212d3065056",
+      "bytes": 675,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipa/vit_l16/i17_t16_finetune.sh",
+      "sha256": "5f17733a32ae0f61b8b2bad0f170d455afaa8a0e5d95431f4f5886f2baabb80c",
+      "bytes": 803,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipa/vit_l16/i17_t16_pretrain.sh",
+      "sha256": "bd9224726c6506433b293cea5026b8ac97ae9209cc1c3d542b15ed98ab9e36a4",
+      "bytes": 761,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipa/vit_l16/i37_t8_finetune.sh",
+      "sha256": "d3dba24d9fe07b16e22303cd055852b8f96e11a7d196ed4ebec4863771686386",
+      "bytes": 803,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipa/vit_l16/i37_t8_pretrain.sh",
+      "sha256": "d9dab7efb97f3a49c7fcfac54250e9d412f0b91ed7b1953cde2172d042036bd2",
+      "bytes": 767,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipav2/vit_h14/i257_t32_finetunex4.sh",
+      "sha256": "6da0f71d53c42f7b8b647afdcfbfd33cf858dd486808e4d8f944f36de002c4d9",
+      "bytes": 1130,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipav2/vit_h14/i50_t8_pretrain.sh",
+      "sha256": "f176ad12cc04ea3ef7a8cc7c5c841e9b2c7560d04864ff2f93d38656ff955c68",
+      "bytes": 1054,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/clipav2/vit_h14/i577_t32_finetunex1.sh",
+      "sha256": "4fdf657c3d84554921a9158e42e400738fdd57e348f1b23ad66405f5363db484",
+      "bytes": 1131,
+      "role": "code"
+    },
+    {
+      "path": "upstream/docs/script_examples/stability_example.sh",
+      "sha256": "807db104b6f229ddb15fa3e595dc18863a1de580ba9564fcc4a45938630c4668",
+      "bytes": 1656,
+      "role": "code"
+    },
+    {
+      "path": "upstream/pytest.ini",
+      "sha256": "4686dac5c57eb41726253639acd5966819aa552759eaf5f3e942220b12ec1501",
+      "bytes": 39,
+      "role": "code"
+    },
+    {
+      "path": "upstream/requirements-test.txt",
+      "sha256": "fb3ce13455b305a3e03356ac1add9800764eefa925ff6f2133f70f9332e8e8cc",
+      "bytes": 59,
+      "role": "code"
+    },
+    {
+      "path": "upstream/requirements-training.txt",
+      "sha256": "0c3dc9b065be52196f223796dfcc148fa1039fd9244a91c78e8db6c2fb185d29",
+      "bytes": 126,
+      "role": "code"
+    },
+    {
+      "path": "upstream/requirements.txt",
+      "sha256": "21844aca3a902dabbfbaad1b9d1b7314406c69c60bc47c90daaa1b1f84060248",
+      "bytes": 85,
+      "role": "code"
+    },
+    {
+      "path": "upstream/scripts/clipav1_vit_l16_i37_t8.sh",
+      "sha256": "4ded5b0b6bd4c65ede084ed21bd6cf6944501fdfee0c11312d7ce4a8b27a66f0",
+      "bytes": 269,
+      "role": "code"
+    },
+    {
+      "path": "upstream/scripts/clipav2_vit_h14_i84_224_336_cl32_gap_datacomp1b.sh",
+      "sha256": "15d65c6c58abbeef750097e2e847d7caf91fe94e93942559a98a7e23a92fb1a1",
+      "bytes": 385,
+      "role": "code"
+    },
+    {
+      "path": "upstream/scripts/h14_224_32_finetune.sh",
+      "sha256": "b86431b25c26345ab78c46bab78b8b129d7b65a7f253feb4f10bfd49378f8bad",
+      "bytes": 883,
+      "role": "code"
+    },
+    {
+      "path": "upstream/scripts/h14_84_8_pretrain.sh",
+      "sha256": "b32eb748e3c57edd51c15185b3501cf4271bfdcfea85865f8a142589d53556e9",
+      "bytes": 892,
+      "role": "code"
+    },
+    {
+      "path": "upstream/setup.py",
+      "sha256": "09c09515af9e36fd1f212b0ec12ee0afe135d1946a7f527de5fac9882c7d10b1",
+      "bytes": 2104,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/__init__.py",
+      "sha256": "b9b6d1014ab74b8a135acd07b7ee7bf7f5844b6b2d75a7407c4dcd2b60bce954",
+      "bytes": 1264,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/big_vision.py",
+      "sha256": "aea5ca63e7cabe24b6cae8371db1e44198ca64a5591534dd3e7b3125de4339ef",
+      "bytes": 7711,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/bpe_simple_vocab_16e6.txt.gz",
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+      "bytes": 1356917,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/coca_model.py",
+      "sha256": "b94b941b519549b233f3d9956fcbb42458e5943e947f9c6af382dbbd3bf3f629",
+      "bytes": 17642,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/constants.py",
+      "sha256": "eaf08275e171187683b129da702f2f586ab3a3d876884aa345d9136d42e49c03",
+      "bytes": 256,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/factory.py",
+      "sha256": "802ed0d390bc2cc3c819232e4faece4a0ef14d2b2850841c0aa15f55d9c09307",
+      "bytes": 17655,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/generation_utils.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/hf_configs.py",
+      "sha256": "1f29974215001c88b68c9ed77fa91eab3129347c8245a5c0516c803c630dd807",
+      "bytes": 2422,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/hf_model.py",
+      "sha256": "a02c7eded58ab452d8cdfbc8dcd0e2033d8f4fa2427fba49d02f39aa9f83a1a7",
+      "bytes": 6960,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/loss.py",
+      "sha256": "42d92ca49ebdeb004ebc73fca096a2fa7b18369edbdc33b51c1db70bdd84f22f",
+      "bytes": 15383,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model.py",
+      "sha256": "d1a7116730dbd780b347a5d0e7081a69528812a8d66770e36724e08202ded408",
+      "bytes": 23608,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/EVA01-g-14-plus.json",
+      "sha256": "818a6bbd661e27a6b3ff0d4c26e5394516cf407b06fd5c45b053fd360ba8fd80",
+      "bytes": 401,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/EVA01-g-14.json",
+      "sha256": "158832e2457b0a520b04eb3f6f2206cc3ade922ebcfe7460b57cc49b509c458a",
+      "bytes": 400,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/EVA02-B-16.json",
+      "sha256": "710c46f5ffe3e850d15e070ff7b60f51977bd5b1787d2aae81c72a5243cb91fb",
+      "bytes": 404,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/EVA02-E-14-plus.json",
+      "sha256": "6e5ed3af4cc263db6535c8eebf5fd1bbf70df706c0f056e23ce363ee0b2ec630",
+      "bytes": 411,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/EVA02-E-14.json",
+      "sha256": "6490bdc1a9786c2cd384fb4f96425ed343875c2f4791a8edb7a59a0cee060b1f",
+      "bytes": 411,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/EVA02-L-14-336.json",
+      "sha256": "fd39103806d6316a620e70b153d19afdfe6d1c925d60c546e8f5fffeb022961f",
+      "bytes": 406,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/EVA02-L-14.json",
+      "sha256": "273c4fec39646cb0f25f5f85cd133b00ddcae817dfc692b799156217fd93d2be",
+      "bytes": 406,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/RN101-quickgelu.json",
+      "sha256": "24dd435eec6871d7675bd6b02098e71e105a957aa6a3a59153b03181103756b5",
+      "bytes": 388,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/RN101.json",
+      "sha256": "0466aae72c1cd259a8655e25af3170d54acb4cbac95304cb9832d68e0716538b",
+      "bytes": 364,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/RN50-quickgelu.json",
+      "sha256": "079e9c4f3d7808a767de08061ab417f98d9e8aaaecec6510949cad0c0c389a41",
+      "bytes": 389,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/RN50.json",
+      "sha256": "a5b9845a44b5a052fb1697055b41b492171aa84868f1408e5fed7e6077d046d4",
+      "bytes": 364,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/RN50x16.json",
+      "sha256": "971064787fdc0266bb51d924db6f7f5311763118733315b54f2a9e52bdb64d50",
+      "bytes": 365,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/RN50x4.json",
+      "sha256": "aea39b4ec952ccfe1b7f9242a9c0d36e1abeb90f5c6fd4b2cfac6e402462df72",
+      "bytes": 365,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/RN50x64.json",
+      "sha256": "c9547262af1b739ca64766246b12d9b5e51f33c354f2bb1d8fe871dbb2ded3de",
+      "bytes": 370,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16-SigLIP-256.json",
+      "sha256": "5b5bc1d47748d1681c3b843bc6d5fc77f36ac2ddb07db7a2a2c0c07ec19d5c0b",
+      "bytes": 710,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16-SigLIP-384.json",
+      "sha256": "5011115711c21dae3a6efc4983461bac7ebae227c0155ed345802754b6616bbe",
+      "bytes": 710,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16-SigLIP-512.json",
+      "sha256": "4cf5c83e3fcee1c55174cdf85bc637c6d05d0d80da8c954658f1373c84b9c37a",
+      "bytes": 710,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16-SigLIP-i18n-256.json",
+      "sha256": "333feb29b23ee26be33221a6b5e085b19d8e7d8270375940abc076461c0a58bd",
+      "bytes": 720,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16-SigLIP.json",
+      "sha256": "0c49495bdaeb419c02bf0de9c948b69b52547fb781d17a08ca32e95c1b63f40b",
+      "bytes": 710,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16-plus-240.json",
+      "sha256": "09b2a65ea7bf757440b89b52e7a09ff85d556635f0e3a4ca76109e42aac6e351",
+      "bytes": 295,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16-plus.json",
+      "sha256": "8e0c645c9190b34c48c281cbc243e1ed7c3fd3c1ee5f2c5885fe9c17b11c327a",
+      "bytes": 295,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16-quickgelu.json",
+      "sha256": "4be2e81cacf5acb157cd56af7ddf7ae04ecf64b4a50953ddb690b33dc929614d",
+      "bytes": 318,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-16.json",
+      "sha256": "66d48767ab11591f4af2d2d1bf21845c3f2bea17ac70e0989991ff166a53ae52",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-32-256.json",
+      "sha256": "16a91bb7023b8c720f8d2cab8b8245cb4d91d4d149b6c4b732a4c0b0bd3e0e52",
+      "bytes": 295,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-32-plus-256.json",
+      "sha256": "fcb771914c59371ec222f05dd5af44a5da74c72855c1c686f3f9701c95d64732",
+      "bytes": 295,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-32-quickgelu.json",
+      "sha256": "437dc6acc8455267c2646e84f880a026d91ac20828db9b100b18a5edba0e767a",
+      "bytes": 318,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-B-32.json",
+      "sha256": "743f4fcee3aea1705c1865f89a3767d816513769f57eb483a9eea3e610ebe633",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-H-14-CLIPA-336.json",
+      "sha256": "116c13bd106cf3d2bf555fe7ca86413e6f6a428bea5adb31d3af81a3d00d2974",
+      "bytes": 604,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-H-14-CLIPA.json",
+      "sha256": "d1a3c42091754ceae93a8b11de41ee0f8ee75f20b028c69b385c6a694768e17a",
+      "bytes": 604,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-H-14-quickgelu.json",
+      "sha256": "b848bf57a19fe06d54d360b27396ba169e014936ee385e6bcb243764146efa8b",
+      "bytes": 348,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-H-14.json",
+      "sha256": "8b5bd11e1775f0fd79227ba05c07f3339b1c4da2e0f21f5426631774a84a6058",
+      "bytes": 324,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-H-16.json",
+      "sha256": "45c950e8c98300b5e0085781e9f91cc6f12ff94b43d0ed0f9687ed993209e8ef",
+      "bytes": 324,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-14-280.json",
+      "sha256": "848f42db24beda55ce044fb82cc4ffae34fa3a769184c2187a71e5074df209c1",
+      "bytes": 296,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-14-336.json",
+      "sha256": "980d8da26bf11b651426addb113881f24f707589ebecc7b882269e3678b33e84",
+      "bytes": 296,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-14-CLIPA-336.json",
+      "sha256": "c2757b77120d5e6e1954edb2753662f91624acc39728ef936a469620d63bc0f8",
+      "bytes": 576,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-14-CLIPA.json",
+      "sha256": "f2736ed6148cee6862d3248c36e0fc181f3f9e6ef6b1d3f8959e944a53f1298a",
+      "bytes": 576,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-14-quickgelu.json",
+      "sha256": "05618c9aeb50d41100bc778209d59cdea49687684e5009aec4ccf1b85a7ee272",
+      "bytes": 320,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-14.json",
+      "sha256": "616750a927ea8d8b0b8e4ec93179cab3df9e4f1531cb60cc5dd6882cb063888b",
+      "bytes": 296,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-16-320.json",
+      "sha256": "e4b766875aa5b1b303db804bb446d4c78213ed34bc089e79297b14287b952331",
+      "bytes": 296,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-16-SigLIP-256.json",
+      "sha256": "dfec7d35911d6fc6765acb584d841fb90291912ad12b22017a7e3938a8ad11e1",
+      "bytes": 713,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-16-SigLIP-384.json",
+      "sha256": "7f8dbbf9bab9aad2b8699045dbacb81293fb113d1e7ad58fc47b0612df60d32e",
+      "bytes": 713,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-L-16.json",
+      "sha256": "eae893277137e6cd4f071265423d135663528018cc13bdbf50709feaa80284fa",
+      "bytes": 296,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-M-16-alt.json",
+      "sha256": "a7888dab87466d26cdd7fe6b1df995c17028ca21b8e6848aa9ff549cd57fdf08",
+      "bytes": 325,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-M-16.json",
+      "sha256": "22852ee6d1e4c977f99b79d837fe226c315f75c16a22f809a16df6a2c1792d49",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-M-32-alt.json",
+      "sha256": "a1be2c52a813f752842683c60472712bbe6cf10a8adbeecff94cfe0c9f5ef310",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-M-32.json",
+      "sha256": "30b866c3c488a841903f0ce0892224cf6cd88924186a2f1bf5cca90fe3e529ef",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-S-16-alt.json",
+      "sha256": "377ff96ac3126125c2d59f71567542ab4563230b1cf94287614dd12df86e78ff",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-S-16.json",
+      "sha256": "68a3b267da2d98daa52d6df7f9e7764dfe68b619e2ddcda0ab7a0074d5057beb",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-S-32-alt.json",
+      "sha256": "8e60da19a82ea42e7c97102ae551d31497da66dbb11793800875584fcb46c760",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-S-32.json",
+      "sha256": "f8eeef14759a63a27686abd7eba45ae45b69f0344c32fbff67c059c8f016da3b",
+      "bytes": 294,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-SO400M-14-SigLIP-384.json",
+      "sha256": "a0cc409efb645c37d8763ae08796f2a5b617f27df357c7f3cb22d22dd6ca0af4",
+      "bytes": 743,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-SO400M-14-SigLIP.json",
+      "sha256": "f38301e1b87d3ea2ebed8df9d529cc7c6776001f539c8193b0b7ad229ab269ec",
+      "bytes": 743,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-bigG-14-CLIPA-336.json",
+      "sha256": "92391b33e657cc1349b8a0a4db2da0e5906cad17caf9390ab22014d6df62169f",
+      "bytes": 634,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-bigG-14-CLIPA.json",
+      "sha256": "dfdd52a989e3f7d71899c6d12b6df175437b5d5d48e53e6a0e4a0ac5b2eb282c",
+      "bytes": 634,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-bigG-14.json",
+      "sha256": "6f5fc4e85739ca3546804e30178f5241b3be2becd8cf52c282b6e90c742a9f30",
+      "bytes": 354,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-e-14.json",
+      "sha256": "27e8d32a1c7727ef84fb4ab2c337b69fcb7aae96243c8bcfb4b4bbaffd2a83d1",
+      "bytes": 354,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/ViT-g-14.json",
+      "sha256": "463160a932f75774ded241d4217eebd172fe7c03c24646530a24b89b20148df5",
+      "bytes": 353,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/coca_ViT-B-32.json",
+      "sha256": "5dc0a9a7803fefb45fadd78ae534839d2adc258efe4b732fdf9c370b49caeee5",
+      "bytes": 659,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/coca_ViT-L-14.json",
+      "sha256": "709768239a6598fe13f19f1ccffd152d503c4c51847ea211f4aefec2158a91f8",
+      "bytes": 664,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/coca_base.json",
+      "sha256": "41ea88529c52700715eba5e90ac0e4edca4453346195d1c305cb71ab7d8c75e0",
+      "bytes": 669,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/coca_roberta-ViT-B-32.json",
+      "sha256": "f1a2bf83f300285c7428b3aa8f5dcffa35bffb6b28291054e131097adcdddfa6",
+      "bytes": 525,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_base.json",
+      "sha256": "aca749568baacbeed4d9e80259440f377023b42744ac26ab2f3a01a0eeea9b84",
+      "bytes": 421,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_base_w.json",
+      "sha256": "3de1efb055e506c05952ef13faef6eedabcd68a001d0f7df2c595541f3c3f66a",
+      "bytes": 422,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_base_w_320.json",
+      "sha256": "37b39ef036e6c949af1d5a2f404e469cc216e2ee73d290d0e3169e326f367e93",
+      "bytes": 422,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_large.json",
+      "sha256": "571e78940760a9f389169da9eda00f32f584bb9814bc507fb79e5051c771c29b",
+      "bytes": 423,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_large_d.json",
+      "sha256": "76a8d687335fb75dc02c10bac5de66f7f687e3ab8b23cf0f372ebf86fb0ce58a",
+      "bytes": 420,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_large_d_320.json",
+      "sha256": "44c8dea391af808d38e16d4ff489e2f498bbfa35a974deb9f7273d8932c56679",
+      "bytes": 420,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_small.json",
+      "sha256": "54c0d8b6168b6a7907e32ff8134ef096aa1b1e2100c815f366b728b7fcedd122",
+      "bytes": 422,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_tiny.json",
+      "sha256": "c919729a818c48f95371c8b52030c96513cf2d38e28a94a098be78da3b345e89",
+      "bytes": 422,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_xlarge.json",
+      "sha256": "320f6ee194db97b3b98511ccd9086f29d65ca69bfe1889686f0b4d3fda4334f2",
+      "bytes": 426,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_xxlarge.json",
+      "sha256": "5017c8577bfe979ebcf227b0d651b783809717a12177905d7ce71254b363108e",
+      "bytes": 427,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/convnext_xxlarge_320.json",
+      "sha256": "ab4f469f9ef8df163259e91f145f0a7b2fec21824fb1c2dfa863cc6ab01b52f4",
+      "bytes": 427,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/mt5-base-ViT-B-32.json",
+      "sha256": "4500e4afbf60fb7de67eeb29b17ad0d16543e83169bc6d26d1e146cb7db36e56",
+      "bytes": 305,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/mt5-xl-ViT-H-14.json",
+      "sha256": "ef39c8cd72497262ee30284ec7a76b7fdfba47451aad414e9202cffc40a3d700",
+      "bytes": 329,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/nllb-clip-base.json",
+      "sha256": "bd0513883ac288fadb048ec501a3bb2dab21fa304ac39a32f670f4c93268bf21",
+      "bytes": 371,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/nllb-clip-large.json",
+      "sha256": "62e73e592f50963b22f7288c14a39c115a9210af2dacc985a18aa75b7b1a65e5",
+      "bytes": 399,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/roberta-ViT-B-32.json",
+      "sha256": "e3d92d60e6522a09c0282c44499d4c26b6cd51448538073d4401920f30985f81",
+      "bytes": 323,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/swin_base_patch4_window7_224.json",
+      "sha256": "1cb823b9fab9bd851d81ac0af751ccb7fa9ed1ebb31a16cea29e01ca8c3edd87",
+      "bytes": 380,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/vit_medium_patch16_gap_256.json",
+      "sha256": "50426397fc6e28e205df55b9aadedc49c47e73904229ea588fcef29e0e65a07f",
+      "bytes": 377,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/vit_relpos_medium_patch16_cls_224.json",
+      "sha256": "b0539ae19daff98d4edfabfd711a808e01bc362e23414438dd158ec430dd7b28",
+      "bytes": 384,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/xlm-roberta-base-ViT-B-32.json",
+      "sha256": "16551a11d9af85a667d80b3e6030f0998a1443b08990d81d6e639954e1dace8e",
+      "bytes": 307,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/model_configs/xlm-roberta-large-ViT-H-14.json",
+      "sha256": "313a3be236f830ff4836854379e1ba11f8c263e24bc16b429c4615415de929f8",
+      "bytes": 337,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/modified_resnet.py",
+      "sha256": "897534d25611fb83520f749cb19e000b7e19bc6d1946072c03e28dc37057d136",
+      "bytes": 7035,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/openai.py",
+      "sha256": "a85761641ab845dd7f676b441140e9fe846be38f30e4bb56b48354b25840c260",
+      "bytes": 3302,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/pos_embed.py",
+      "sha256": "153ba2e3de1e50ca1d3b5ffe20309ac8ec085a682c9d1b3f802844b2cc418cbf",
+      "bytes": 4044,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/pretrained.py",
+      "sha256": "7a67a015f789904c42589092f5507b7d4285bbfed6d0102f526600a51a8f9738",
+      "bytes": 21710,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/push_to_hf_hub.py",
+      "sha256": "efb1ce8ad0d00a9dd6d9b1889ebeeb648618d7b4dc7e06b9b488d658fb0982a6",
+      "bytes": 10647,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/timm_model.py",
+      "sha256": "83ded7394e679e82a59c2f85a7e13fbe6aa1a2c11d97a05d204364fc975f92f1",
+      "bytes": 5951,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/tokenizer.py",
+      "sha256": "378246587f3b5dbda70b42d36e53351a0f08c7deb412510356f50bee46b40005",
+      "bytes": 17574,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/transform.py",
+      "sha256": "11c80cb26058a9e6b6af0169d9655ba3a6a704420082f4d789fd3371b4a75eb8",
+      "bytes": 14339,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/transformer.py",
+      "sha256": "7cac708abe6e7668a25cd84280ddfec5afa67ee7e37cf4dfa449e17c4e321214",
+      "bytes": 30372,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/utils.py",
+      "sha256": "f0267bb9d5402b1b5b38a90f96f6cd9002ac21d2db0f3f3fbee8ed48b2f46047",
+      "bytes": 3472,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/version.py",
+      "sha256": "19fa356cfb71def5cfaee06e2818454c15d031e0f9f5497cbcab001fce3242c9",
+      "bytes": 23,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/zero_shot_classifier.py",
+      "sha256": "b47cf460049c9754cce121c41a18e07e844756db363dfb3bd7e402a473a60e33",
+      "bytes": 4345,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/open_clip/zero_shot_metadata.py",
+      "sha256": "3bd8adb168bdf80fd681a71258e67f2c4d0f8ed73eae9b504ed5063e1726bbe9",
+      "bytes": 19245,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/.gitignore",
+      "sha256": "96731671afe640d782dff36b82a3ad8d1ce0ebe4a7b174f6506f251395941e2f",
+      "bytes": 6,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/data.py",
+      "sha256": "d272760fe1fc4090b9a8972fe2e703c279b3be017b0b6d5bb2a5693ac3c9778b",
+      "bytes": 20415,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/distributed.py",
+      "sha256": "7bb8358f67f4381fafc1d39861ea6efca07621b5b0d2736ea6d53fa020941eb3",
+      "bytes": 4444,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/file_utils.py",
+      "sha256": "37b9e166605feefa8de5b8d2b0032ccae8708b5edfa54d82353dafc78bf1b4aa",
+      "bytes": 2686,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/logger.py",
+      "sha256": "d90ffad0a42e9d8f1b15af6a0db819e178d6a880f8203c6a51368856cd26f3ee",
+      "bytes": 899,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/main.py",
+      "sha256": "42cdcb978936cc6819dca8afb647d1ed0c871cd3356015c35d877c6f7e1620b3",
+      "bytes": 20987,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/params.py",
+      "sha256": "002d274973bf86eb360dacec6b1eb6ac85f9c4319249af8795da2b67bf403ed2",
+      "bytes": 15386,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/precision.py",
+      "sha256": "29c7d1b5c749a22d4dec9c73c8b0ed8281fb0ff983458ea9c279685ea97dc765",
+      "bytes": 383,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/profiler.py",
+      "sha256": "5c077fe0671abb4a531577b1e6e528bb2e88815e2da3cac36382e07870a14454",
+      "bytes": 9244,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/scheduler.py",
+      "sha256": "53c48109f8a2c4edda0e417bbe4a9257242826d47f6edf7d4bf16b4381789a05",
+      "bytes": 1747,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/train.py",
+      "sha256": "87fd017bd0ef26c68d78d627cb5aefe7f226133778eee276cd26922bc74ce50b",
+      "bytes": 15033,
+      "role": "code"
+    },
+    {
+      "path": "upstream/src/training/zero_shot.py",
+      "sha256": "dde92b1e7c4d6f3c2ef9c51ec9a89df18030aaac136e5e60adff3b8e8c61687b",
+      "bytes": 2854,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tests/test_download_pretrained.py",
+      "sha256": "3db850bd4e1f14dc0a49fd5608a67d18db98ba89581a44d95c652550aa9e89fa",
+      "bytes": 5718,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tests/test_hf_model.py",
+      "sha256": "c29434892b6e1487c33dc6e9de5a2b71a50c21b0b6bc0475b3ee93dc7dfdd1d1",
+      "bytes": 1040,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tests/test_inference.py",
+      "sha256": "6f0fe6171801edea0aecba17b5fc2497df3771fd7f146485d77fc7117677bff1",
+      "bytes": 5448,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tests/test_inference_simple.py",
+      "sha256": "d1cbf9a6c0659da311f57c9557e02c40ca69abb95ce70ad78f7c2e7dbed4e223",
+      "bytes": 1623,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tests/test_num_shards.py",
+      "sha256": "9891b512eb2647da58303cd9aaaf2777780c52b5580d6f93774e4e7ce265d9f7",
+      "bytes": 757,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tests/test_training_simple.py",
+      "sha256": "615a417a319ac45c33ccec43248b86ae286f17b4161d1e57eddd59ee4f775d65",
+      "bytes": 2714,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tests/test_wds.py",
+      "sha256": "ffc4480bb27196dea4db6b3f45355cfce18111fd1338789067fae5273ab4d1a5",
+      "bytes": 5050,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tests/util_test.py",
+      "sha256": "c954f7162b678ab68b9a55fab5cb82fba0840fda32e22dc62d45757ad4a26113",
+      "bytes": 11423,
+      "role": "code"
+    },
+    {
+      "path": "upstream/tutorials/int8_tutorial.ipynb",
+      "sha256": "4d7d4f9d6fa4b95f2471e4c1ed98a05b6f61ab732ad629c3b1e36dc92d1667a0",
+      "bytes": 441581,
+      "role": "code"
+    },
+    {
+      "path": "checkpoints/pretrained/README.md",
+      "sha256": "4f23faa276bdeef957a0f7c00088f913214bcaad93d79e7768accb9ab5d0f58e",
+      "bytes": 10287,
+      "role": "documentation"
+    },
+    {
+      "path": "checkpoints/pretrained/open_clip_config.json",
+      "sha256": "9a41f334a8c444678772c0ebb9ab854c97ab350bced3a17b803e258d39c23dc0",
+      "bytes": 707,
+      "role": "config"
+    },
+    {
+      "path": "checkpoints/pretrained/open_clip_pytorch_model.bin",
+      "sha256": "52cc993c5c5ff962bd0c60931874bc001e7e9b41666a385530f4a036294576be",
+      "bytes": 783705670,
+      "role": "weights"
+    }
+  ],
+  "completed_unix": 1790174037.5737503,
+  "implementation_upstream": {
+    "url": "https://github.com/mlfoundations/open_clip.git",
+    "commit": "f08f25f3f226bdb538de2b4ed48a9213ba6b179e",
+    "path": "baselines/biomedclip/upstream"
+  },
+  "loader": {
+    "kind": "biomedclip_visual",
+    "weights": "checkpoints/pretrained/open_clip_pytorch_model.bin",
+    "config": "checkpoints/pretrained/open_clip_config.json",
+    "code_root": null,
+    "implementation": "open_clip_torch==2.23.0; timm==0.9.12"
+  },
+  "cpu_tensor_validation": {
+    "passed": true,
+    "weights_only": true,
+    "tensors": 352,
+    "parameters_and_buffers": 195903233,
+    "representative_shapes": {
+      "visual.trunk.patch_embed.proj.weight": [
+        768,
+        3,
+        16,
+        16
+      ],
+      "visual.head.proj.weight": [
+        512,
+        768
+      ]
+    }
+  }
+}

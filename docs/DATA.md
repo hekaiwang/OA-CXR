@@ -1,5 +1,10 @@
 # Data and fixed membership
 
+This page describes the **public benchmarks**. The separate private clinical
+cohort uses reference lung regions manually delineated by senior physicians;
+its images and annotations are not publicly released. See
+[private data availability and local interfaces](PRIVATE_DATA.md).
+
 Raw radiographs are not redistributed here. Obtain source datasets under their
 provider terms. `reproducibility/main_sources.jsonl.gz` and
 `external_sources.jsonl.gz` contain source IDs, public filenames, image/annotation

@@ -1,0 +1,190 @@
+{
+  "schema": "oa-cxr-baseline-release-validation-v1",
+  "validation_date": "2026-10-15",
+  "scope": "Technical release checks, separate from historical full experiments",
+  "unit_and_integration_tests": {
+    "command": "python -m pytest -q",
+    "passed": 355,
+    "skipped": 4,
+    "subtests_passed": 45,
+    "failures": 0,
+    "errors": 0,
+    "skips": "Four optional actual HF processor cross-checks",
+    "junit_xml_sha256": "3d68417a21a8751ce1ff56daf017715984ebe66db7c15659bd113c98eaac2d9c"
+  },
+  "environment": {
+    "python": "3.10",
+    "device": "CPU",
+    "dependency_check": "pip check passed; no broken requirements",
+    "separate_pinned_environments_used_for_visual_and_frozen_encoder_stacks": true
+  },
+  "public_cli_imports": {
+    "passed": true,
+    "commands": [
+      "baseline_assets",
+      "baseline_features",
+      "baseline_inputs",
+      "compare_baselines",
+      "compare_report_baselines",
+      "evaluation_scores",
+      "predict_baseline",
+      "prepare_private",
+      "train_baseline"
+    ]
+  },
+  "synthetic_regression_checks": {
+    "hgb": {
+      "synthetic_fit_predict": "passed",
+      "samples": 96
+    },
+    "xgboost": {
+      "synthetic_fit_predict": "passed",
+      "samples": 96
+    },
+    "catboost": {
+      "synthetic_fit_predict": "passed",
+      "samples": 96
+    },
+    "ridge": {
+      "synthetic_fit_predict": "passed",
+      "samples": 96
+    },
+    "biomedclip": {
+      "synthetic_training": "passed",
+      "production_training": false
+    },
+    "chexzero": {
+      "synthetic_training": "passed",
+      "production_training": false
+    },
+    "dinov2": {
+      "synthetic_training": "passed",
+      "production_training": false
+    },
+    "tabm": {
+      "synthetic_training": "passed",
+      "production_training": false
+    }
+  },
+  "synthetic_neural_scope": {
+    "fit_queries": 4096,
+    "dev_queries": 256,
+    "optimizer_updates_per_method": 2,
+    "full_training": false
+  },
+  "real_public_feature_exports": {
+    "dataset": "NIH-CheXmask",
+    "methods": {
+      "oa": {
+        "sources": 2,
+        "inputs": 26,
+        "queries": 78,
+        "target_values_loaded": false,
+        "status_sha256": "94cb341319936e40e270407d1e61e2710eea6db20359c6ae3852b317a19ec573"
+      },
+      "biomedclip": {
+        "sources": 2,
+        "inputs": 26,
+        "queries": 78,
+        "target_values_loaded": false,
+        "status_sha256": "6a7da7578198d10fff84137a8ab3b3ef0c72882e3f1bc53272e8920fcb376290"
+      },
+      "chexzero": {
+        "sources": 2,
+        "inputs": 26,
+        "queries": 78,
+        "target_values_loaded": false,
+        "status_sha256": "b7b9c2f11cafe4a78630b1ad5d50036f826d38e3732d37f32f33555d5dbf140e"
+      },
+      "dinov2": {
+        "sources": 2,
+        "inputs": 26,
+        "queries": 78,
+        "target_values_loaded": false,
+        "status_sha256": "74a9703e06f39c58cd56c601b2b1f4c0b73621e60b5b132a1c98aae2ca22f647"
+      }
+    },
+    "execution": "CPU FP32; technical sample, not a scientific reference metric"
+  },
+  "real_public_visual_scores": {
+    "dataset": "NIH-CheXmask",
+    "methods": {
+      "chexpert": {
+        "scored_inputs": 26,
+        "failed_inputs": 0,
+        "scored_queries": 78,
+        "failed_queries": 0,
+        "status_sha256": "1c29a56fb6cf9e9dd15a6eb03001d6050c9c7f35bc1276922088d9e1554c649c"
+      },
+      "autoqc": {
+        "scored_inputs": 26,
+        "failed_inputs": 0,
+        "scored_queries": 78,
+        "failed_queries": 0,
+        "status_sha256": "876d1b56c3c72f99066fbfa6fb2fe4432f2b0661c339f5cca4b0b61b6646aa02"
+      },
+      "biovil_t": {
+        "scored_inputs": 26,
+        "failed_inputs": 0,
+        "scored_queries": 78,
+        "failed_queries": 0,
+        "status_sha256": "b1cf8b6db9b254b8e2cdbb0c42aa8a63978fdc223e3ca7a688994b88b8f804ce"
+      }
+    }
+  },
+  "official_asset_download": {
+    "method": "autoqc",
+    "fresh_download_and_full_sha256_verification": "passed",
+    "configuration_sha256": "30e326248f4cca611d9306c98feab6f268ccc83a035c2877c87b51473df8562b",
+    "other_methods": "Used existing pinned upstream assets; not all downloaded again"
+  },
+  "image_comparison_integration": {
+    "methods": [
+      "oa_cxr",
+      "chexpert",
+      "autoqc",
+      "biovil_t"
+    ],
+    "sources": 2,
+    "nominal_queries": 78,
+    "common_queries": 78,
+    "paired_bootstrap_replicates": 20,
+    "metrics_sha256": "92095503326117338ac50334a8738faf15a51f97158e9fac4bd36a1b19ba299d"
+  },
+  "report_comparison_integration": {
+    "synthetic_only": true,
+    "checks": [
+      "complete fixed source roster",
+      "failed and zero-claim reports retained",
+      "explicit failed claim scores retained",
+      "exact generated claim and report identity",
+      "complete image-score denominator"
+    ]
+  },
+  "private_cohort_interface": {
+    "synthetic_only": true,
+    "native_manual_mask_geometry": "passed",
+    "metadata_path_and_checksum_rejection": "passed",
+    "annotation_provenance": "Study authors state that reference lung regions were manually delineated by senior physicians",
+    "private_annotations_independently_audited": false,
+    "private_numeric_results_reproduced": false
+  },
+  "publication_scope": {
+    "private_images_masks_reports_identifiers_or_record_level_outputs": false,
+    "private_source_manifest_or_ethics_attachment": false,
+    "private_cohort_point_estimates": false,
+    "aggregate_reference_metrics": "public benchmarks only"
+  },
+  "full_baseline_retraining_during_release": false,
+  "full_maira_scuq_generation_rerun": false,
+  "historical_completed_training_reference": "baseline_training_reference.json",
+  "public_reference_metrics": "baseline_reference_metrics.json",
+  "fresh_staged_checkout": {
+    "exact_staged_bytes_preserved": true,
+    "passed": 355,
+    "skipped": 4,
+    "subtests_passed": 45,
+    "junit_xml_sha256": "c77cbd5ef2b2c2a01a45a3ba6b2f177d887302c8f566c51eba92bf8c0d471457",
+    "asset_manifest_line_endings_preserved": true
+  }
+}

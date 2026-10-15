@@ -31,6 +31,11 @@ the V7-derived masks with `python scripts/public/download.py --output weights_tr
 after installation. See [data preparation and fixed splits](docs/DATA.md) for
 the exact versions, checksums and commands.
 
+The study also uses a **private clinical cohort**, whose reference lung regions
+were **manually delineated by senior physicians**. These data and annotations
+are not publicly available. We provide the local data interface and evaluation
+protocol; see [private data availability](docs/PRIVATE_DATA.md).
+
 ## Results
 
 Reference results for the released model, rounded to **four decimal places**.
@@ -51,6 +56,35 @@ independent replay of the published weights.
 
 - [Training, evaluation and reproduction boundaries](docs/REPRODUCIBILITY.md)
 - [Licenses and third-party attribution](THIRD_PARTY_NOTICES.md)
+
+## Baseline comparisons
+
+Code and fixed configurations for **all 15 external baseline adaptations** are
+included: eight regressors, three visual ranking signals and four report
+confidence signals. See the [baseline reproduction guide](docs/BASELINES.md)
+for upstream asset downloads, environments, feature export, fitting, prediction
+and paired evaluation. Third-party pretrained weights are downloaded directly
+from their original providers.
+
+The following historical results use all **343,395 queries** from the four
+public evaluation sources. Macro errors are equal-weight averages across
+sources, on the original 0–1 scale, rounded to four decimal places.
+
+| Method | Macro MAE ↓ | Macro RMSE ↓ |
+|---|---:|---:|
+| **OA-CXR** | **0.0296** | **0.0627** |
+| TabM | 0.0308 | 0.0648 |
+| HGB | 0.0385 | 0.0709 |
+| DINOv2 + MLP | 0.0389 | 0.0763 |
+| XGBoost | 0.0403 | 0.0731 |
+| CatBoost | 0.0403 | 0.0729 |
+| CheXzero + MLP | 0.0420 | 0.0841 |
+| Ridge | 0.0453 | 0.0767 |
+| BiomedCLIP + MLP | 0.0489 | 0.0934 |
+
+[Full-precision public reference metrics](reproducibility/baseline_reference_metrics.json)
+also contain the visual ranking results. Report confidence methods use separate
+common-statement cohorts and are not mixed into this regression table.
 
 ## Install
 
@@ -135,9 +169,10 @@ reproduction guide for external datasets and interpretation of numerical drift.
 - Kermany results are exploratory following historical exposure; filename
   families are not verified cross-dataset patient identities. NIH labels are
   model-generated masks. No claim of zero foundation-pretraining overlap is made.
-- This release focuses on the OA method. Historical benchmark orchestration,
-  all baseline weights, report-generation outputs and the entire local research
-  workspace are not prerequisites for training this implementation.
+- The release includes OA and the 15 external baseline adaptations. Historical
+  internal ablation/challenge orchestration and every intermediate experiment
+  artifact are outside this release. Private-cohort numerical results require
+  authorized data access; public code alone cannot make those data available.
 
 Original project code is MIT licensed. Model initialization, data and annotation
 licenses remain distinct; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

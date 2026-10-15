@@ -1,0 +1,146 @@
+{
+  "schema": "oa-cxr-baseline-training-reference-v1",
+  "description": "Aggregate historical completed-run evidence; not a claim of new full retraining during code publication",
+  "methods": {
+    "hgb": {
+      "status": "completed",
+      "fit_source_images": 19086,
+      "fit_rows": 744354,
+      "status_sha256": "093b513417e403abbd79801eb364b41ac1ba920e4436faea4babd8627c355e14",
+      "data": "public 19086-source fit split; no private cohort used for fitting"
+    },
+    "xgboost": {
+      "status": "completed",
+      "fit_source_images": 19086,
+      "fit_rows": 744354,
+      "status_sha256": "2736150dca873b5b2cb31e1b6d1bcf37439d44a4c420f028eab83f4bca921688",
+      "data": "public 19086-source fit split; no private cohort used for fitting"
+    },
+    "catboost": {
+      "status": "completed",
+      "fit_source_images": 19086,
+      "fit_rows": 744354,
+      "status_sha256": "c06797cdd8a6201323a36457d50ba64ec9763bc51f7f4fdfc5cdfe6ce0edd7b3",
+      "data": "public 19086-source fit split; no private cohort used for fitting"
+    },
+    "ridge": {
+      "status": "completed",
+      "fit_source_images": 19086,
+      "fit_rows": 744354,
+      "status_sha256": "ff5880319c31098cad66f8e56af49950f65be0ab64e231ebce02094678f7f85b",
+      "data": "public 19086-source fit split; no private cohort used for fitting"
+    },
+    "tabm": {
+      "status": "completed",
+      "completed_epochs": 30,
+      "optimizer_steps": 10920,
+      "status_sha256": "898c9b19a6e68ca447f1bde492e64a86d80a8fd6eceb0230bd7441059c53b4e7",
+      "selected_model": {
+        "schema": "oa-cxr-foundation-baseline-training-v1",
+        "method": "tabm",
+        "model_config": {
+          "input_dim": 1253,
+          "k": 32,
+          "d_block": 512,
+          "n_blocks": 3,
+          "dropout": 0.1,
+          "activation": "ReLU",
+          "arch_type": "tabm",
+          "start_scaling_init": "random-signs",
+          "numerical_embeddings": null
+        },
+        "selected_epoch": 17,
+        "selected_optimizer_steps": 6188,
+        "dev_mae": 0.029938979849331554,
+        "seed": 17,
+        "protocol_sha256": "1fb5c08baa3f532ed7bc0c01552bdf8bcdea03471943d81ed775724897040ef5",
+        "state_sha256": "9f65b0a839bf44431690e3a38900320c67764eb5af959a1b3d0daff94157fed9"
+      },
+      "data": "public 19086-source fit split; no private cohort used for fitting"
+    },
+    "biomedclip": {
+      "status": "completed",
+      "completed_epochs": 30,
+      "optimizer_steps": 10920,
+      "status_sha256": "5946692dfa193d718046131a3276cd3b5cdffb2f96ba3885c52b83c7b8d8cd09",
+      "selected_model": {
+        "schema": "oa-cxr-foundation-baseline-training-v1",
+        "method": "biomedclip",
+        "model_config": {
+          "input_dim": 515,
+          "width": 256,
+          "inner_width": 256,
+          "blocks": 2,
+          "dropout": 0.0,
+          "activation": "linear_clamp",
+          "residual_mode": "none",
+          "minimum_scale": 1e-06,
+          "retained_head": null
+        },
+        "selected_epoch": 17,
+        "selected_optimizer_steps": 6188,
+        "dev_mae": 0.04946312931827257,
+        "seed": 17,
+        "protocol_sha256": "cd6a128e41346ce61e86914196748013e4d204b870793ac126faa383503bddea",
+        "state_sha256": "e7f35708cd2f014b43c907633601ac25e6abf79ec64a5fc78a7c26a16c2f8ef8"
+      },
+      "data": "public 19086-source fit split; no private cohort used for fitting"
+    },
+    "chexzero": {
+      "status": "completed",
+      "completed_epochs": 30,
+      "optimizer_steps": 10920,
+      "status_sha256": "7a8191575c5938f3a364653f27c4d054e2b770ed43e60f601b509eff9bb67d8f",
+      "selected_model": {
+        "schema": "oa-cxr-foundation-baseline-training-v1",
+        "method": "chexzero",
+        "model_config": {
+          "input_dim": 515,
+          "width": 256,
+          "inner_width": 256,
+          "blocks": 2,
+          "dropout": 0.0,
+          "activation": "linear_clamp",
+          "residual_mode": "none",
+          "minimum_scale": 1e-06,
+          "retained_head": null
+        },
+        "selected_epoch": 21,
+        "selected_optimizer_steps": 7644,
+        "dev_mae": 0.04064060770979875,
+        "seed": 17,
+        "protocol_sha256": "30d498309e19b3039bc847de34bb2a6039c3be5499b140ea7777e37045820787",
+        "state_sha256": "9a75fb48a840b9b051a28f3a0d530afa25d9b63fe341ae92a0eb864499382fd9"
+      },
+      "data": "public 19086-source fit split; no private cohort used for fitting"
+    },
+    "dinov2": {
+      "status": "completed",
+      "completed_epochs": 30,
+      "optimizer_steps": 10920,
+      "status_sha256": "c4c4876b1147320fd6b195b7471762eac821711df7d38294ce8be09f809a172c",
+      "selected_model": {
+        "schema": "oa-cxr-foundation-baseline-training-v1",
+        "method": "dinov2",
+        "model_config": {
+          "input_dim": 771,
+          "width": 256,
+          "inner_width": 256,
+          "blocks": 2,
+          "dropout": 0.0,
+          "activation": "linear_clamp",
+          "residual_mode": "none",
+          "minimum_scale": 1e-06,
+          "retained_head": null
+        },
+        "selected_epoch": 14,
+        "selected_optimizer_steps": 5096,
+        "dev_mae": 0.04005991695587921,
+        "seed": 17,
+        "protocol_sha256": "88c4d12552e0bb224c798b0c1f0c16a685897a29c9ea75d97e888342d0404499",
+        "state_sha256": "76ce1882caead4b8f6868c9a4e81d04d149eab09728f8424b67d4614b60c0236"
+      },
+      "data": "public 19086-source fit split; no private cohort used for fitting"
+    }
+  }
+}

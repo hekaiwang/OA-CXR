@@ -7,3 +7,5 @@
 *.txt text eol=lf
 *.yml text eol=lf
 *.cff text eol=lf
+# Baseline configs bind exact asset-manifest bytes, including line endings.
+baselines/**/*.json -text

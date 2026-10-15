@@ -53,6 +53,32 @@ obtained under their individual provider terms. The repository supplies fixed
 membership and reconstruction code, not a blanket redistribution license for
 those datasets. See [DATA.md](docs/DATA.md) for exact sources and versions.
 
+## Baseline code and downloaded assets
+
+The baseline adapters in this repository are project code. Their underlying
+packages, upstream implementations and pretrained weights retain their own
+terms. The release includes pinned source/weight inventories and download
+instructions, rather than copies of vendor source trees or checkpoints.
+
+- BiomedCLIP: the pinned official model card declares MIT; research use and
+  attribution remain described by the upstream card.
+- CheXzero: upstream MIT code and NOTICE are retained through the pinned
+  download. We use one exact author-linked checkpoint and do not relicense it.
+- DINOv2 and TabM: their pinned upstream repositories declare Apache-2.0.
+- BioViL-T: the pinned official model card declares MIT.
+- AutoQC: preserved declarations include MIT at the repository root,
+  BSD-3-Clause for embedded NIQE code, and GPLv3 in package metadata. The
+  downloader retains these notices; this project does not resolve the
+  conflicting scope by labeling all AutoQC files MIT.
+- SCUQ source: MIT at the pinned official commit. RadGraph's pinned official
+  model card declares MIT; its encoder has separate provenance. No blanket
+  license for all downloaded assets is asserted.
+- HGB/Ridge, XGBoost and CatBoost are installed as separately licensed packages.
+
+Exact revisions, file identities and original source URLs are recorded in the
+per-method asset manifests and `scripts/rebuild/asset_sources.json`. SHA256
+checks establish file identity, not permission to redistribute.
+
 ## MAIRA-2 and report experiments
 
 The historical report-generation experiments used frozen MAIRA-2 revision
